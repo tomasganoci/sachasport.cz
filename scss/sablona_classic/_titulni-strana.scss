@@ -170,27 +170,3 @@ h4.homepage-group-title,
         margin-top: 15px;
     }
 }
-/* Naše značky */
-[class*="custom-footer__banner"] {
-    align-items: center;
-    display: flex;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-color: #dadada;
-    padding-bottom: 20px!important;
-    padding-top: 20px!important;
-}
-[class*="custom-footer__banner"]>.banner {
-    margin-bottom: 0px;
-}
-@media (max-width: 767px){
-    [class*="custom-footer__banner"] {
-        width: 50%!important;
-    }
-    .custom-footer .banner {
-    min-height: auto;
-    }
-    .custom-footer {
-        padding-top: 0px;
-    }
-}
