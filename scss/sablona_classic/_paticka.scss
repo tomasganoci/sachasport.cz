@@ -1,0 +1,41 @@
+/* Zvýraznění písma v patičce */
+#footer .contact-box a,
+#footer .password-helper a,
+#footer .news-item-widget a,
+#footer ul a {
+	color: #595959;
+}
+
+@media (max-width:767px) {
+
+	.custom-footer ul li {
+		padding: 15px;
+	}
+}
+
+/* Zmenšení bloku newsletter */
+@media (min-width:767px) {
+	.custom-footer>div.extended {
+		width: 50%;
+	}
+
+	@media (min-width:1200px) {
+		.custom-footer>div.extended {
+			width: 25%;
+		}
+	}
+}
+
+/* Úprava  footer */
+@media (min-width:1200px) {
+	#footer .site-name {
+		display: none;
+	}
+}
+
+@media (min-width:1200px) {
+	.custom-footer {
+		padding-left: 0px;
+		padding-top: 0px;
+	}
+}

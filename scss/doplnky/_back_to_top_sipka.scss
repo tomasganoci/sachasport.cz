@@ -1,0 +1,62 @@
+/* <!-- „Back to Top“ šipka --> */
+/* <!-- service 421(75) html code header --> 20.8.2024 */
+body:not(.template-07):not(.template-09):not(.template-10):not(
+    .template-11
+  ):not(.template-12):not(.template-13):not(.template-14)
+  #return-to-top
+  i::before {
+  content: "a";
+}
+#return-to-top i:before {
+  content: "\e911";
+}
+#return-to-top {
+  z-index: 1000;
+  position: fixed;
+  bottom: 90px;
+  right: 26px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #fff;
+  margin: -10px 0 0 -10px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  display: block;
+  font-style: normal;
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+  color: #fff;
+}
+.icon-chevron-up::before {
+  font-weight: bold;
+}
+.ordering-process #return-to-top {
+  display: none !important;
+}

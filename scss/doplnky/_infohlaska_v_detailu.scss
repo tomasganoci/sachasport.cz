@@ -1,0 +1,334 @@
+:root {
+	--contact-form-BG: #f7f7f7;
+	--contact-form-BG-hover: #eaeaea;
+	--contact-form-title-color: var(--color-secondary);
+	--contact-form-text-color: black;
+	--contact-form-link-color: var(--color-secondary);
+	--contact-form-icon-color: var(--color-secondary);
+	--contact-form-border-color: #f7f7f7;
+	--contact-form-border-radius: 5px
+}
+
+@font-face {
+	font-family: "contact-form-addon";
+	src: url("iconfonts/contact-form.eot?5dxjad");
+	src: url("iconfonts/contact-form.eot?5dxjad#iefix") format("embedded-opentype"), url("iconfonts/contact-form.ttf?5dxjad") format("truetype"), url("iconfonts/contact-form.woff?5dxjad") format("woff"), url("iconfonts/contact-form.svg?5dxjad#contact-form") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block
+}
+
+[class^="contact-form-ico"]:after,
+[class*="contact-form-ico"]:after,
+[class^="contact-form-ico"]:before,
+[class*="contact-form-ico"]:before {
+	font-family: "contact-form-addon" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+.contact-form-ico.price-3:before {
+	content: "\e901"
+}
+
+.contact-form-ico.mail-1:before {
+	content: "\e902"
+}
+
+.contact-form-ico.mail-2:before {
+	content: "\e903"
+}
+
+.contact-form-ico.send-1:before {
+	content: "\e904"
+}
+
+.contact-form-ico.bubble-1:before {
+	content: "\e905"
+}
+
+.contact-form-ico.price-2:before {
+	content: "\e906"
+}
+
+.contact-form-ico.mail-5:before,
+.contact-form-ico.mail-6:before {
+	content: "\e907"
+}
+
+.contact-form-ico.bubble-2:before {
+	content: "\e908"
+}
+
+.contact-form-ico.price-4:before {
+	content: "\e909"
+}
+
+.contact-form-ico.mail-3:before {
+	content: "\e90a"
+}
+
+.contact-form-ico.price-5:before {
+	content: "\e90b"
+}
+
+.contact-form-ico.mail-4:before {
+	content: "\e90c"
+}
+
+.contact-form-ico.send-2:before {
+	content: "\e90d"
+}
+
+.contact-form-ico.price-1:before {
+	content: "\e900"
+}
+
+.detail-contact-form-addon .flag.flag-contact-form-0 {
+	display: none !important
+}
+
+.detail-contact-form-addon .fix-detail-header .detail-contact-button {
+	display: none
+}
+
+.detail-contact-form-addon .detail-contact-button-link {
+	text-decoration: none !important
+}
+
+.detail-contact-form-addon.detail-contact-form-addon--show-chat .icon-question-before,
+.detail-contact-form-addon.detail-contact-form-addon--show-chat .link-icon.chat {
+	display: inline-block
+}
+
+.detail-contact-form-addon .icon-question-before,
+.detail-contact-form-addon .link-icon.chat {
+	display: none
+}
+
+.detail-contact-form-addon.disabled-add-to-cart .detail-contact-button {
+	margin-bottom: 20px
+}
+
+.detail-contact-form-addon.template-14 .detail-contact-button {
+	margin-bottom: 20px;
+	margin-top: -10px
+}
+
+@media (min-width: 768px) {
+	.detail-contact-form-addon.template-14 .detail-contact-button {
+		margin-top: -20px
+	}
+}
+
+.detail-contact-form-addon.template-11 .detail-contact-button {
+	margin-top: 0
+}
+
+.detail-contact-form-addon.template-11.paxio-merkur .detail-contact-button {
+	margin-top: 20px;
+	width: 100%
+}
+
+.detail-contact-form-addon.template-11.paxio-merkur .detail-contact-button__text-block {
+	line-height: 1.4
+}
+
+.detail-contact-form-addon.template-07 .p-details .price {
+	flex-wrap: wrap
+}
+
+.detail-contact-form-addon.venus .detail-contact-button {
+	margin-top: 10px
+}
+
+.detail-contact-form-addon.venus .detail-contact-button__title {
+	margin-bottom: 3px
+}
+
+.detail-contact-form-addon.shoptetak-adamin.detail-contact-form-addon .detail-contact-button-link {
+	order: 2
+}
+
+.detail-contact-form-addon.shoptetak-adamin .detail-contact-button {
+	order: 2;
+	border-radius: 10px;
+	margin-top: 15px
+}
+
+.detail-contact-form-addon .detail-contact-button-wrap {
+	padding: 0 15px
+}
+
+.detail-contact-form-addon .detail-contact-button {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition: all 300ms ease-out
+}
+
+.detail-contact-form-addon .detail-contact-button.has-bg {
+	background-color: var(--contact-form-BG);
+	padding: 10px 12px
+}
+
+@media (min-width: 768px) {
+	.detail-contact-form-addon .detail-contact-button.has-bg {
+		padding: 12px 15px
+	}
+}
+
+.detail-contact-form-addon .detail-contact-button.has-bg:hover {
+	background-color: var(--contact-form-BG-hover);
+	border-color: var(--contact-form-BG-hover)
+}
+
+.detail-contact-form-addon .detail-contact-button.has-border {
+	border: 1px solid var(--contact-form-border-color);
+	padding: 10px 12px
+}
+
+@media (min-width: 768px) {
+	.detail-contact-form-addon .detail-contact-button.has-border {
+		padding: 12px 15px
+	}
+}
+
+.detail-contact-form-addon .detail-contact-button.has-border-radius {
+	border-radius: var(--contact-form-border-radius)
+}
+
+.detail-contact-form-addon .detail-contact-button.has-row {
+	align-items: center
+}
+
+.detail-contact-form-addon .detail-contact-button.has-row:not(.has-border):not(.has-bg):not(.has-box) {
+	padding: 0
+}
+
+.detail-contact-form-addon .detail-contact-button.has-row:not(.has-border):not(.has-bg):not(.has-box) .detail-contact-button__icon {
+	width: 35px;
+	max-width: 35px;
+	flex: 0 0 35px;
+	padding-right: 10px
+}
+
+.detail-contact-form-addon .detail-contact-button.has-row:not(.has-border):not(.has-bg):not(.has-box) .detail-contact-button__icon.contact-form-ico:before {
+	font-size: 22px
+}
+
+.detail-contact-form-addon .detail-contact-button.has-row:not(.has-border):not(.has-bg):not(.has-box) .detail-contact-button__title {
+	text-transform: none;
+	font-size: 14px
+}
+
+.detail-contact-form-addon .detail-contact-button.has-row .detail-contact-button__title {
+	display: inline-block
+}
+
+.detail-contact-form-addon .detail-contact-button.has-row .detail-contact-button__text {
+	margin-top: 0;
+	display: inline-block
+}
+
+.detail-contact-form-addon .detail-contact-button__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 45px;
+	max-width: 45px;
+	flex: 0 0 45px;
+	padding-right: 15px
+}
+
+.detail-contact-form-addon .detail-contact-button__icon.contact-form-ico:before {
+	display: inline-block !important;
+	margin-top: 0;
+	font-size: 28px;
+	line-height: 1;
+	color: var(--contact-form-icon-color)
+}
+
+.detail-contact-form-addon .detail-contact-button__icon img {
+	display: inline-block;
+	max-width: 35px;
+	max-height: 35px
+}
+
+.detail-contact-form-addon .detail-contact-button__text-block {
+	flex: 1
+}
+
+.detail-contact-form-addon .detail-contact-button__title {
+	font-size: 16px;
+	letter-spacing: .32px;
+	font-weight: 500;
+	color: var(--contact-form-title-color);
+	text-transform: uppercase
+}
+
+.detail-contact-form-addon .detail-contact-button__text {
+	font-weight: 400;
+	font-size: 14px;
+	color: var(--contact-form-text-color)
+}
+
+.detail-contact-form-addon .detail-contact-button__text a {
+	cursor: pointer;
+	text-decoration: underline;
+	color: var(--contact-form-link-color)
+}
+
+#colorbox.remove-height {
+	height: auto !important
+}
+
+#colorbox.remove-height #cboxContent {
+	margin-top: 0
+}
+
+#colorbox.remove-height #cboxContent,
+#colorbox.remove-height #cboxLoadedContent,
+#colorbox.remove-height #cboxWrapper {
+	height: auto !important
+}
+
+#colorbox.contact-form-addon h1 {
+	margin-top: 20px;
+	margin-bottom: 16px;
+	font-size: 26px;
+	line-height: 1.2;
+	text-align: center
+}
+
+#colorbox.contact-form-addon h1.contact-form-ico:before {
+	position: relative;
+	top: 2px;
+	font-size: 22px;
+	line-height: 1;
+	margin-right: 8px;
+	color: var(--contact-form-icon-color)
+}
+
+#colorbox.contact-form-addon h1.has-img img {
+	display: inline-block;
+	max-width: 25px;
+	max-height: 25px;
+	margin-right: 8px;
+	position: relative;
+	top: -2px
+}
+
+#colorbox.contact-form-addon p {
+	text-align: center;
+	margin-bottom: 25px
+}

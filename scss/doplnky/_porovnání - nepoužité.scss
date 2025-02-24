@@ -1,0 +1,218 @@
+/* :root {
+    --color-detail-product-arrows-BG: rgba(0, 0, 0, 0.25);
+    --color-detail-product-arrows-BG-hover: rgba(0, 0, 0, 0.6);
+    --color-detail-product-arrows-icon: #ffffff;
+    --color-detail-product-arrows-icon-hover: #ffffff;
+    --detail-product-arrows-border-radius: 100%
+}
+
+.has-detail-product-arrows.tursky-apollo .carousel-control--product.right:before,
+.has-detail-product-arrows.tursky-apollo .carousel-control--product.left:before {
+    box-shadow: none;
+    background-color: transparent;
+    color: inherit
+}
+
+.has-detail-product-arrows.dklab-sliderplus-arrow-bublina .p-image .carousel-control:after,
+.has-detail-product-arrows.shoptak-carbon .p-image .carousel-control:after {
+    display: none
+}
+
+.has-detail-product-arrows.dklab-sliderplus-arrow-bublina .p-image .carousel-control.right:before,
+.has-detail-product-arrows.shoptak-carbon .p-image .carousel-control.right:before,
+.has-detail-product-arrows.dklab-sliderplus-arrow-bublina .p-image .carousel-control.left:before,
+.has-detail-product-arrows.shoptak-carbon .p-image .carousel-control.left:before {
+    content: "" !important
+}
+
+.has-detail-product-arrows.template-09 .carousel-control--product.right,
+.has-detail-product-arrows.template-10 .carousel-control--product.right,
+.has-detail-product-arrows.template-09 .carousel-control--product.left,
+.has-detail-product-arrows.template-10 .carousel-control--product.left {
+    display: inline-block;
+    speak: none;
+    vertical-align: middle;
+    font-family: shoptet;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 0;
+    text-transform: none;
+    text-decoration: none
+}
+
+.has-detail-product-arrows.template-09 .carousel-control--product.right:before,
+.has-detail-product-arrows.template-10 .carousel-control--product.right:before,
+.has-detail-product-arrows.template-09 .carousel-control--product.left:before,
+.has-detail-product-arrows.template-10 .carousel-control--product.left:before {
+    font-size: 24px
+}
+
+@media (min-width: 768px) {
+
+    .has-detail-product-arrows.template-09 .carousel-control--product.right:before,
+    .has-detail-product-arrows.template-10 .carousel-control--product.right:before,
+    .has-detail-product-arrows.template-09 .carousel-control--product.left:before,
+    .has-detail-product-arrows.template-10 .carousel-control--product.left:before {
+        font-size: 26px
+    }
+}
+
+.has-detail-product-arrows.template-09 .carousel-control--product.right:before,
+.has-detail-product-arrows.template-10 .carousel-control--product.right:before {
+    content: "\e910"
+}
+
+.has-detail-product-arrows.template-09 .carousel-control--product.left:before,
+.has-detail-product-arrows.template-10 .carousel-control--product.left:before {
+    content: "\e90f"
+}
+
+.has-detail-product-arrows .p-image.is-border-radius+.carousel-control.right,
+.has-detail-product-arrows .p-image.is-border-radius+.carousel-control+.carousel-control.right,
+.has-detail-product-arrows .p-image.is-border-radius .carousel-control--product.right,
+.has-detail-product-arrows .p-image.is-border-radius+.carousel-control.left,
+.has-detail-product-arrows .p-image.is-border-radius+.carousel-control+.carousel-control.left,
+.has-detail-product-arrows .p-image.is-border-radius .carousel-control--product.left {
+    border-radius: var(--detail-product-arrows-border-radius)
+}
+
+@media (min-width: 768px) {
+
+    .has-detail-product-arrows .p-image.show-on-hover .carousel-control--product.right,
+    .has-detail-product-arrows .p-image.show-on-hover .carousel-control--product.left {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 250ms ease-out, transform 250ms ease-out
+    }
+}
+
+@media (min-width: 768px) {
+    .has-detail-product-arrows .p-image.show-on-hover .carousel-control--product.left {
+        transform: translateX(-20px)
+    }
+
+    .has-detail-product-arrows .p-image.show-on-hover .carousel-control--product.right {
+        transform: translateX(20px)
+    }
+}
+
+.has-detail-product-arrows .p-image.show-on-hover:hover .carousel-control--product.right,
+.has-detail-product-arrows .p-image.show-on-hover:hover .carousel-control--product.left {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0)
+}
+
+.has-detail-product-arrows .carousel-control--product {
+    display: block;
+    color: var(--color-detail-product-arrows-icon)
+}
+
+.has-detail-product-arrows .carousel-control--product:hover {
+    color: var(--color-detail-product-arrows-icon-hover)
+}
+
+.lSSlideWrapper .has-detail-product-arrows .carousel-control--product.right,
+.lSSlideWrapper .has-detail-product-arrows .carousel-control--product.left {
+    width: 40px !important
+}
+
+.lSSlideWrapper .has-detail-product-arrows .carousel-control--product.right:before,
+.lSSlideWrapper .has-detail-product-arrows .carousel-control--product.left:before {
+    width: 40px !important
+}
+
+@media (min-width: 768px) {
+
+    .lSSlideWrapper .has-detail-product-arrows .carousel-control--product.right:before,
+    .lSSlideWrapper .has-detail-product-arrows .carousel-control--product.left:before {
+        width: 50px !important
+    }
+}
+
+@media (min-width: 768px) {
+
+    .lSSlideWrapper .has-detail-product-arrows .carousel-control--product.right,
+    .lSSlideWrapper .has-detail-product-arrows .carousel-control--product.left {
+        width: 50px !important
+    }
+}
+
+.has-detail-product-arrows .carousel-control--product.right,
+.has-detail-product-arrows .carousel-control--product.left {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    cursor: pointer;
+    background-color: var(--color-detail-product-arrows-BG);
+    background-image: none;
+    text-shadow: none;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.has-detail-product-arrows .carousel-control--product.right:hover,
+.has-detail-product-arrows .carousel-control--product.left:hover {
+    background-color: var(--color-detail-product-arrows-BG-hover)
+}
+
+.has-detail-product-arrows .carousel-control--product.right:before,
+.has-detail-product-arrows .carousel-control--product.left:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-color: transparent;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    top: 0
+}
+
+@media (max-width: 767px) {
+
+    .has-detail-product-arrows .carousel-control--product.right:before,
+    .has-detail-product-arrows .carousel-control--product.left:before {
+        font-size: 16px
+    }
+}
+
+@media (min-width: 768px) {
+
+    .has-detail-product-arrows .carousel-control--product.right:before,
+    .has-detail-product-arrows .carousel-control--product.left:before {
+        width: 50px;
+        height: 50px
+    }
+}
+
+@media (min-width: 768px) {
+
+    .has-detail-product-arrows .carousel-control--product.right,
+    .has-detail-product-arrows .carousel-control--product.left {
+        width: 50px;
+        height: 50px
+    }
+}
+
+.has-detail-product-arrows .carousel-control--product.left {
+    left: 0
+}
+
+.has-detail-product-arrows .carousel-control--product.left:before {
+    left: 0
+}
+
+.has-detail-product-arrows .carousel-control--product.right {
+    right: 0
+}
+
+.has-detail-product-arrows .carousel-control--product.right:before {
+    right: 0
+}¨
+*/

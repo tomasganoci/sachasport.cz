@@ -1,0 +1,34 @@
+/* <!-- Zvolené filtry --> */
+/* <!-- service 533(184) html code header --> */
+/* Vlastní úpravy */
+@media (max-width: 767px) {
+	.vybrane-filtry {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.vybrane-filtry .param-filter-top {
+		padding-top: 0px;
+	}
+
+	.vybrane-filtry .aktivni-filtr {
+		padding: 5px;
+		border: 1px solid #000;
+		margin: 0 5px 3px 0;
+	}
+
+	.vybrane-filtry .param-filter-top form .aktivni-filtr {
+		padding: 5px !important;
+		border: 1px solid #000;
+	}
+	/* Původní kód rozhodí robrazení hodnot ve filtru */
+	#content .filter-section fieldset div.aktivni-filtr {
+		width: auto;
+	}
+	#content .filter-section.filter-section-parametric fieldset div.aktivni-filtr:nth-child(even) {
+		clear: none;
+	}
+	.vybrane-filtry input[type=checkbox]:checked+label::after, .vybrane-filtry input[type=radio]:checked+label::after {
+		display: none !important;
+	}
+}

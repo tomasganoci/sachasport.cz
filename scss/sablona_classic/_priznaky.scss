@@ -1,0 +1,33 @@
+/* Změna pozadí příznaků */
+.flag.flag-action {
+	background-color: #3368FF;
+}
+
+.flag.flag-new {
+	background-color: #478523;
+}
+
+.flag.flag-discount {
+	background-color: #EB0000;
+}
+
+/* Kolečko slevy */
+.p-image-wrapper .flags-extra {
+	z-index: 1;
+}
+
+/* Přesunutí "flags" do předu */
+.products-block .p .flags-default {
+	z-index: 1;
+}
+
+/* Zvětšení slevy v seznamu */
+.flags-extra .flag .price-standard,
+.flags-extra .flag .price-save {
+	font-size: 14px;
+}
+
+.flags-extra .flag {
+	width: 80px !important;
+	height: 80px !important;
+}

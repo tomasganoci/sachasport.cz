@@ -1,0 +1,158 @@
+/* <!-- Zvolené filtry --> */
+/* <!-- service 533(184) html code header --> */
+.vybrane-filtry::before {
+	content: "Zvolené filtry";
+	background: #999;
+	color: #fff;
+	display: block;
+	margin: -10px -20px 10px -20px;
+	padding: 7px 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.svk .vybrane-filtry::before {
+	content: "Zvolené filtre";
+}
+
+.hu .vybrane-filtry::before {
+	content: "Kiválasztott filterek";
+}
+
+.vybrane-filtry {
+	background-color: #eaeaea;
+	padding: 10px 20px;
+	margin-left: -20px;
+	margin-right: -20px;
+	margin-bottom: 10px;
+}
+
+.vybrane-filtry input[type="checkbox"]:checked+label::before,
+.vybrane-filtry input[type="radio"]:checked+label::before {
+	content: "\e912";
+	font-family: shoptet;
+	background: none !important;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 7px;
+	line-height: 16px;
+	border: 0;
+	position: relative;
+	top: -1px;
+	transform: none;
+	height: auto;
+	width: auto;
+	margin-right: 3px;
+	color: #999;
+}
+
+.vybrane-filtry input[type="checkbox"]:checked+label::after,
+.vybrane-filtry input[type="radio"]:checked+label::after {
+	content: ",";
+	background: none;
+	border: 0;
+	width: auto;
+	height: auto;
+	display: inline-block !important;
+	position: relative;
+	left: -3px;
+	top: auto;
+	transform: none;
+}
+
+.vybrane-filtry .filter-section label.active {
+	font-weight: 400;
+	padding: 0;
+	margin-right: 5px;
+}
+
+.vybrane-filtry .filter-count {
+	display: none;
+}
+
+.vybrane-filtry .filter-section fieldset div,
+.vybrane-filtry h4,
+.vybrane-filtry form {
+	display: inline-block;
+}
+
+.vybrane-filtry h4::after {
+	content: ":";
+}
+
+.vybrane-filtry h4::before {
+	display: none;
+}
+
+#filters .vybrane-filtry h4 {
+	margin-right: 5px !important;
+	margin-bottom: 0 !important;
+	text-transform: none;
+	border: 0 !important;
+	padding: 0 !important;
+}
+
+.sidebar h4 span:not(.question-tooltip) {
+	background-color: transparent;
+}
+
+.vybrane-filtry .filter-section fieldset>div:last-of-type>label::after,
+.vybrane-filtry .filter-section fieldset>div>div:last-of-type>label::after {
+	display: none !important;
+}
+
+.vybrane-filtry .filter-section:not(.filter-section-default) {
+	padding: 5px 0 !important;
+	border-top: 0 !important;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.vybrane-filtry .filter-section form {
+	margin-bottom: 0 !important;
+}
+
+.param-filter-top .filter-section:last-of-type {
+	border-bottom: 0;
+}
+
+#content .vybrane-filtry form {
+	vertical-align: middle;
+}
+
+.vybrane-filtry .param-filter-top {
+	margin-bottom: 0;
+}
+
+.vybrane-filtry .param-filter-top form {
+	width: 100%;
+}
+
+.vybrane-filtry .param-filter-top form .aktivni-filtr {
+	padding: 5px 0 !important;
+	border-bottom: 1px solid #e0e0e0;
+	width: 100%;
+}
+
+.vybrane-filtry .param-filter-top input[type="checkbox"]:checked+label::after {
+	display: none;
+}
+
+.vybrane-filtry .advanced-filters-wrapper .advanced-parameter {
+	display: none;
+}
+
+.vybrane-filtry .advanced-filters-wrapper .filter-label {
+	display: block !important;
+}
+
+.vybrane-filtry .advanced-filters-wrapper>div {
+	width: auto;
+}
+
+.vybrane-filtry .advanced-filters-wrapper>div {
+	padding-bottom: 0;
+}
+
+.vybrane-filtry .question-tooltip {
+	display: none;
+}

@@ -1,0 +1,419 @@
+/* DKLab
+@font-face {
+    font-family: 'instagramplus';
+    src:  url('instagramplus.eot');
+    src:  url('instagramplus.eot#iefix') format('embedded-opentype'),
+    url('instagramplus.ttf') format('truetype'),
+    url('instagramplus.woff') format('woff'),
+    url('instagramplus.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#dklab_instagram_widget.container {
+    padding: 0
+}
+
+#dklab_instagram_widget_heading {
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-weight: var(--dklab-instagram-font-weight);
+    margin: 0!important;
+    font-size: var(--dklab-instagram-font-size);
+    line-height: 1;
+    color: var(--dklab-instagram-header-color)
+}
+
+#dklab_instagram_widget_heading>.text {
+    color: var(--dklab-instagram-header-color);
+    margin-left: 10px;
+    text-decoration: none;
+    transition: opacity 350ms
+}
+
+#dklab_instagram_widget_heading>a.text:hover {
+    opacity: .7
+}
+
+#dklab_instagram_widget_heading>span.logo {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    vertical-align: middle;
+    width: var(--dklab-instagram-logo-size-width);
+    height: var(--dklab-instagram-logo-size-height);
+    background: var(--dklab-instagram-logoUrl) center center no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain
+}
+
+#dklab_instagram_widget_heading>span.logo.psaci {
+    top: 1px
+}
+
+#dklab_instagram_widget {
+    margin-top: 40px
+}
+
+#dklab_instagram_widget_in {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.dklab_instagram_widget_box {
+    position: relative;
+    overflow: hidden;
+    width: calc(12.5% - var(--dklab-instagram-padding));
+    min-width: calc(12.5% - var(--dklab-instagram-padding));
+    max-width: calc(12.5% - var(--dklab-instagram-padding));
+    margin: calc(var(--dklab-instagram-padding)/ 2)
+}
+
+.dklab_instagram_widget_box>a {
+    position: relative;
+    padding-top: 100%;
+    background: #fff
+}
+
+.dklab_instagram_widget_box>a,.dklab_instagram_widget_box>a>span>img {
+    -webkit-transition: 450ms;
+    -moz-transition: 450ms;
+    -ms-transition: 450ms;
+    -o-transition: 450ms;
+    transition: 450ms;
+    display: block;
+    width: 100%
+}
+
+.dklab_instagram_widget_box>a>span {
+    -webkit-transition: opacity 450ms;
+    -moz-transition: opacity 450ms;
+    -ms-transition: opacity 450ms;
+    -o-transition: opacity 450ms;
+    transition: opacity 450ms
+}
+
+.dklab_instagram_widget_box>a>span>img,.dklab_instagram_widget_box>a>span>video {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%
+}
+
+.dklab_instagram_widget_box>a>span>img.naSirku {
+    width: auto!important;
+    height: calc(100% + 2px)!important;
+    max-width: none!important
+}
+
+.dklab_instagram_widget_box>a>span>img.naVysku {
+    width: calc(100% + 2px)!important;
+    height: auto!important;
+    max-width: none!important
+}
+
+.dklab_instagram_widget_box.zoom>a:hover>span>img {
+    -ms-transform: translate(-50%,-50%) scale(1.2);
+    -webkit-transform: translate(-50%,-50%) scale(1.2);
+    transform: translate(-50%,-50%) scale(1.2)
+}
+
+.dklab_instagram_widget_box.hover>a:after {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    font-family: instagramplus;
+    content: var(--dklab-instagram-hover-content);
+    transition: opacity 450ms
+}
+
+.dklab_instagram_widget_box.hover>a:hover:after {
+    opacity: 1
+}
+
+.dklab_instagram_widget_box.transparency-darken>a {
+    background: #000
+}
+
+.dklab_instagram_widget_box.transparency-lighten>a {
+    background: #fff
+}
+
+.dklab_instagram_widget_box.transparency-lighten>a:after {
+    color: #000
+}
+
+.dklab_instagram_widget_box.transparency>a:hover span {
+    opacity: .6
+}
+
+#dklab_instagram_widget.textOver {
+    position: relative
+}
+
+#dklab_instagram_widget.textOver #dklab_instagram_widget_heading>span.logo {
+    display: none
+}
+
+#dklab_instagram_widget.textOver #dklab_instagram_widget_heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+    font-size: 220%
+}
+
+#dklab_instagram_widget.textOver #dklab_instagram_widget_heading .text:before {
+    font-weight: 400;
+    font-family: instagramplus;
+    content: '\e901';
+    font-size: 140%;
+    margin-right: 10px;
+    position: relative;
+    top: 3px
+}
+
+#dklab_instagram_widget.textOver #dklab_instagram_widget_heading .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-shadow: 0 0 10px rgba(0,0,0,.95);
+    align-items: center;
+    justify-content: center;
+    margin-left: 0
+}
+
+body.dklab-instagram #footer {
+    margin-top: 0
+}
+
+.multiple-columns-body.template-11 #dklab_instagram_widget {
+    margin-top: 0
+}
+
+body.dklab-instagram #footer .custom-footer__instagram,body.dklab-instagram #footer .instagram-widget {
+    display: none
+}
+
+body.ordering-process #dklab_instagram_widget {
+    display: none
+}
+
+.dklab_instagram_widget_box.dklab_instagram_widget_heading>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: var(--dklab-instagram-header-background);
+    color: var(--dklab-instagram-header-color);
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.1;
+    transition: 350ms;
+    text-decoration: none
+}
+
+.dklab_instagram_widget_box.dklab_instagram_widget_heading>a:hover {
+    color: var(--dklab-instagram-header-color);
+    text-decoration: none;
+    opacity: .75
+}
+
+.dklab_instagram_widget_box.dklab_instagram_widget_heading>a:before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 22px);
+    height: calc(100% - 22px);
+    content: '';
+    border: 1px solid var(--dklab-instagram-border-color);
+    opacity: .5
+}
+
+.dklab_instagram_widget_box.dklab_instagram_widget_heading>a span.logo:before {
+    font-family: instagramplus;
+    content: '\e901';
+    display: block;
+    font-size: 140%
+}
+
+.grid1 .dklab_instagram_widget_box {
+    width: calc(100% - var(--dklab-instagram-padding));
+    min-width: calc(100% - var(--dklab-instagram-padding));
+    max-width: calc(100% - var(--dklab-instagram-padding))
+}
+
+.grid2 .dklab_instagram_widget_box {
+    width: calc(50% - var(--dklab-instagram-padding));
+    min-width: calc(50% - var(--dklab-instagram-padding));
+    max-width: calc(50% - var(--dklab-instagram-padding))
+}
+
+.grid3 .dklab_instagram_widget_box {
+    width: calc(33.33% - var(--dklab-instagram-padding));
+    min-width: calc(33.33% - var(--dklab-instagram-padding));
+    max-width: calc(33.33% - var(--dklab-instagram-padding))
+}
+
+.grid4 .dklab_instagram_widget_box {
+    width: calc(25% - var(--dklab-instagram-padding));
+    min-width: calc(25% - var(--dklab-instagram-padding));
+    max-width: calc(25% - var(--dklab-instagram-padding))
+}
+
+.grid5 .dklab_instagram_widget_box {
+    width: calc(20% - var(--dklab-instagram-padding));
+    min-width: calc(20% - var(--dklab-instagram-padding));
+    max-width: calc(20% - var(--dklab-instagram-padding))
+}
+
+.grid12 .dklab_instagram_widget_box,.grid6 .dklab_instagram_widget_box {
+    width: calc(16.66% - var(--dklab-instagram-padding));
+    min-width: calc(16.66% - var(--dklab-instagram-padding));
+    max-width: calc(16.66% - var(--dklab-instagram-padding))
+}
+
+.grid7 .dklab_instagram_widget_box {
+    width: calc(14.2857% - var(--dklab-instagram-padding));
+    min-width: calc(14.2857% - var(--dklab-instagram-padding));
+    max-width: calc(14.2857% - var(--dklab-instagram-padding))
+}
+
+.grid16 .dklab_instagram_widget_box,.grid8 .dklab_instagram_widget_box {
+    width: calc(12.5% - var(--dklab-instagram-padding));
+    min-width: calc(12.5% - var(--dklab-instagram-padding));
+    max-width: calc(12.5% - var(--dklab-instagram-padding))
+}
+
+.grid9 .dklab_instagram_widget_box {
+    width: calc(11.11% - var(--dklab-instagram-padding));
+    min-width: calc(11.11% - var(--dklab-instagram-padding));
+    max-width: calc(11.11% - var(--dklab-instagram-padding))
+}
+
+.grid10 .dklab_instagram_widget_box {
+    width: calc(10% - var(--dklab-instagram-padding));
+    min-width: calc(10% - var(--dklab-instagram-padding));
+    max-width: calc(10% - var(--dklab-instagram-padding))
+}
+
+@media screen and (max-width: 991px) {
+    .dklab_instagram_widget_box {
+        width:calc(33.33% - var(--dklab-instagram-padding))!important;
+        min-width: calc(33.33% - var(--dklab-instagram-padding))!important;
+        max-width: calc(33.33% - var(--dklab-instagram-padding))!important;
+        display: none!important
+    }
+
+    .dklab_instagram_widget_box:first-of-type,.dklab_instagram_widget_box:nth-of-type(2),.dklab_instagram_widget_box:nth-of-type(3),.dklab_instagram_widget_box:nth-of-type(4),.dklab_instagram_widget_box:nth-of-type(5),.dklab_instagram_widget_box:nth-of-type(6) {
+        display: block!important
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #dklab_instagram_widget_heading {
+        padding-left:10px;
+        padding-right: 10px
+    }
+
+    #dklab_instagram_widget_heading>.text {
+        display: block
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .grid10 .dklab_instagram_widget_box.dklab_instagram_widget_heading {
+        font-size:.8vw
+    }
+
+    .grid9 .dklab_instagram_widget_box.dklab_instagram_widget_heading {
+        font-size: .9vw
+    }
+
+    .grid16 .dklab_instagram_widget_box.dklab_instagram_widget_heading,.grid8 .dklab_instagram_widget_box.dklab_instagram_widget_heading {
+        font-size: 1vw
+    }
+
+    .grid7 .dklab_instagram_widget_box.dklab_instagram_widget_heading {
+        font-size: 1.1vw
+    }
+
+    .grid12 .dklab_instagram_widget_box.dklab_instagram_widget_heading,.grid6 .dklab_instagram_widget_box.dklab_instagram_widget_heading {
+        font-size: 1.2vw
+    }
+
+    .grid5 .dklab_instagram_widget_box.dklab_instagram_widget_heading {
+        font-size: 1.3vw
+    }
+
+    .grid4 .dklab_instagram_widget_box.dklab_instagram_widget_heading {
+        font-size: 1.4vw
+    }
+
+    .grid3 .dklab_instagram_widget_box.dklab_instagram_widget_heading {
+        font-size: 1.5vw
+    }
+
+    .grid2 .dklab_instagram_widget_box.dklab_instagram_widget_heading {
+        font-size: 1.6vw
+    }
+
+    .grid8 .dklab_instagram_widget_box.dklab_instagram_widget_heading {
+        font-size: 1.7vw
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .dklab_instagram_widget_box.dklab_instagram_widget_heading {
+        font-size:3.2vw
+    }
+}
+
+@media (max-width: 991px) {
+    #dklab_instagram_widget.grid4 .dklab_instagram_widget_box:nth-of-type(4) {
+        display:none!important
+    }
+}
+:root {
+            --dklab-instagram-header-color: #000000;  
+            --dklab-instagram-header-background: #DDDDDD;  
+            --dklab-instagram-font-weight: 700;
+            --dklab-instagram-font-size: 180%;            
+            --dklab-instagram-logoUrl: url(https://cdn.myshoptet.com/usr/api2.dklab.cz/user/documents/_doplnky/instagram/img/logo-duha.png); 
+            --dklab-instagram-logo-size-width: 40px;
+            --dklab-instagram-logo-size-height: 40px;                        
+            --dklab-instagram-hover-content: 0;                        
+            --dklab-instagram-padding: 0px;                        
+            --dklab-instagram-border-color: #888888;                        
+            
+        } 
+*/

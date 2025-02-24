@@ -1,0 +1,223 @@
+ /* Sbalení filtrů v kategorii */
+ /* <!-- service 409(63) html code header --> */
+ #filters h4 {
+ 	cursor: pointer;
+ }
+
+ [class~=slider-wrapper],
+ [class~=filter-section] {
+ 	padding-left: 0;
+ }
+
+ #filters h4 {
+ 	padding-left: 13.5pt;
+ }
+
+ [class~=filter-section],
+ [class~=slider-wrapper] {
+ 	padding-bottom: 0 !important;
+ }
+
+ #filters h4:before {
+ 	position: absolute;
+ }
+
+ #filters h4:before {
+ 	left: 0;
+ }
+
+ [class~=filter-section],
+ [class~=slider-wrapper] {
+ 	padding-right: 0;
+ }
+
+ #filters h4 {
+ 	padding-bottom: 9pt;
+ }
+
+ #filters h4 {
+ 	padding-right: 13.5pt;
+ }
+
+ #filters>.slider-wrapper,
+ [class~=slider-wrapper]>div,
+ .filter-sections form,
+ [class~=slider-wrapper][class~=filter-section]>div,
+ .razeni>form {
+ 	display: none;
+ }
+
+ #filters h4:before,
+ #filters .otevreny h4:before {
+ 	content: "\e911";
+ }
+
+ #filters h4 {
+ 	padding-top: 9pt;
+ }
+
+ [class~=filter-section],
+ [class~=slider-wrapper] {
+ 	padding-top: 0 !important;
+ }
+
+ [class~=filter-section] {
+ 	border-top-width: 0 !important;
+ }
+
+ [class~=filter-section] {
+ 	border-top-style: none !important;
+ }
+
+ [class~=filter-section] {
+ 	border-top-color: currentColor !important;
+ }
+
+ #filters .otevreny h4:before,
+ #filters h4:before {
+ 	font-family: shoptet;
+ }
+
+ #filters h4 {
+ 	position: relative;
+ }
+
+ #filters h4 {
+ 	margin-left: 0 !important;
+ }
+
+ [class~=filter-section] {
+ 	border-image: none !important;
+ }
+
+ #filters h4 {
+ 	margin-bottom: 0 !important;
+ }
+
+ #filters h4 {
+ 	margin-right: 0 !important;
+ }
+
+ #filters h4 {
+ 	margin-top: 0 !important;
+ }
+
+ #filters h4 {
+ 	border-top-width: .0625pc;
+ }
+
+ #filters h4 {
+ 	border-top-style: solid;
+ }
+
+ #filters h4 {
+ 	border-top-color: #e0e0e0;
+ }
+
+ [class~=slider-wrapper] {
+ 	max-width: none;
+ }
+
+ [class~=otevreny] form,
+ .slider-wrapper.otevreny>div,
+ [class~=slider-wrapper][class~=otevreny]>div,
+ .otevreny form {
+ 	display: block;
+ }
+
+ #filters h4 {
+ 	border-image: none;
+ }
+
+ [class~=param-filter-top] {
+ 	margin-bottom: .9375pc;
+ }
+
+ [class~=otevreny] form {
+ 	margin-bottom: 15pt;
+ }
+
+ [class~=slider-wrapper] {
+ 	color: inherit;
+ }
+
+ #filters .otevreny h4:before {
+ 	-webkit-transform: rotate(180deg);
+ }
+
+ [class~=slider-wrapper],
+ #filters h4:before {
+ 	background: none;
+ }
+
+ #filters h4:before {
+ 	-webkit-transform: rotate(90deg);
+ }
+
+ #filters h4:before {
+ 	-moz-transform: rotate(90deg);
+ }
+
+ [class~=param-filter-top] form {
+ 	display: block !important;
+ }
+
+ #filters h4:before {
+ 	-o-transform: rotate(90deg);
+ }
+
+ #filters h4:before {
+ 	-ms-transform: rotate(90deg);
+ }
+
+ #filters h4:before {
+ 	transform: rotate(90deg);
+ }
+
+ #filters h4:before {
+ 	font-size: .104166667in;
+ }
+
+ #filters .otevreny h4:before {
+ 	-moz-transform: rotate(180deg);
+ }
+
+ #filters .otevreny h4:before {
+ 	-o-transform: rotate(180deg);
+ }
+
+ #filters h4:before {
+ 	top: 36%;
+ }
+
+ #filters .otevreny h4:before {
+ 	-ms-transform: rotate(180deg);
+ }
+
+ #filters h4:before {
+ 	height: auto;
+ }
+
+ #filters h4:before {
+ 	width: auto;
+ }
+
+ #filters .otevreny h4:before {
+ 	transform: rotate(180deg);
+ }
+
+ @media screen and (max-width: 767px) {
+ 	.param-filter-top {
+ 		padding-top: 15px;
+ 	}
+ }
+
+ #content .filters-wrapper>div:first-of-type,
+ #footer .filters-wrapper>div:first-of-type {
+ 	text-align: left;
+ }
+
+ .template-11.one-column-body .content .filter-sections {
+ 	padding-top: 15px;
+ 	padding-bottom: 15px;
+ }

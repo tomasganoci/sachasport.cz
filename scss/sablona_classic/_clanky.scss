@@ -1,0 +1,126 @@
+/* Půjčovna a ceník */
+.pujcovna,
+.cenik,
+.tabulka_velikosti {
+	color: #000000;
+	width: 100%;
+}
+.tabulka_velikosti {
+	display: flex;
+	overflow-y: auto;
+}
+.pujcovna td,
+.cenik td,
+.tabulka_velikosti td {
+	padding: 5px;
+	border: 1px solid black;
+}
+.tabulka_velikosti tbody {
+	border: 1px solid black;
+}
+.tabulka_velikosti td {
+	padding: 5px;
+	border: 1px solid black;
+	white-space: nowrap;
+}
+.tabulka_velikosti td:first-child {
+	width: 20%
+}
+
+.pujcovna td:first-child {
+	width: 30%
+}
+
+.cenik td:first-child {
+	width: 70%
+}
+/* Změna rozložení https://www.sachasport.cz/blog/* */
+.in-blog #newsWrapper.news-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media (min-width: 480px) {
+	.in-blog .news-item {
+		float: left;
+		flex: 0 1 33.3%;
+		flex-direction: column;
+		padding: 0px 5px;
+		 margin-bottom: 30px;
+	}
+
+	.in-blog .news-item .image {
+		width: 100%;
+		margin-right: unset;
+	}
+}
+@media (min-width: 768px) {
+	.in-blog .news-item {
+		flex: 0 1 25%;
+	}
+}
+@media (min-width: 1200px) {
+	.type-posts-listing.in-blog #content .content-inner {
+		max-width: 100%;
+	}
+}
+/* Úprava článků */
+.in-blog .news-item-detail>.text>h2 {
+	font-family: tahoma, arial, helvetica, sans-serif;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0px 0px 18px 0px;
+}
+.in-blog .news-item-detail>.text>h3 {
+	font-family: tahoma, arial, helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 21px;
+}
+.in-blog .news-item-detail>.text>h4 {
+	font-family: tahoma, arial, helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 19px;
+}
+.in-blog .news-item-detail>.text p {
+	font-size: 14pt;
+
+}
+
+.in-blog .news-item-detail>.text>ul li {
+	font-size: 14pt;
+
+}
+
+.in-blog .news-item-detail>.text>table {
+	width: 100%;
+
+}
+
+.in-blog .news-item-detail>.text .videoblog {
+	position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+
+}
+.in-blog .news-item-detail>.text .videoblog>iframe {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+/* Oprava tabulky, když je tabulka rozdělená na 2 sloupce a v jednom je fotka */
+@media (max-width: 767px) {
+	.in-blog .text table .mobilefoto, .in-o-nas table .mobilefoto  {
+		display: flex;
+		flex-direction: column;
+	}
+	.in-blog .text table .mobilefoto td:first-child, .in-o-nas table .mobilefoto td:first-child {
+		margin-bottom: 18px;
+	}
+	.in-blog .text table .mobilefoto p, .in-o-nas table .mobilefoto p {
+		padding-left: 0px!important
+	}
+}

@@ -1,0 +1,196 @@
+@import 'sirky-displeje';
+
+/* Kategorie na úvodní stránce */
+.next-to-carousel-banners {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0 19px;
+    padding: 0 !important;
+}
+
+.next-to-carousel-banners>.banner-wrapper {
+    flex: 0 0 auto;
+    padding: 10px;
+    margin-top: 0px;
+    width: 100%;
+}
+
+/* Seřazení kategorii */
+.next-to-carousel-banners>.banner-wrapper:nth-child(1) {
+    order: 3;
+}
+
+.next-to-carousel-banners>.banner-wrapper:nth-child(2) {
+    order: 1;
+}
+
+.next-to-carousel-banners>.banner-wrapper:nth-child(3) {
+    order: 4;
+}
+
+.next-to-carousel-banners>.banner-wrapper:nth-child(4) {
+    order: 5;
+}
+
+.next-to-carousel-banners>.banner-wrapper:nth-child(5) {
+    order: 6;
+}
+
+.next-to-carousel-banners>.banner-wrapper:nth-child(6) {
+    order: 2;
+}
+
+.next-to-carousel-banners .banner-wrapper a::before {
+    content: '\e910';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -4px;
+    font-size: 8px;
+    line-height: 8px;
+    font-family: shoptet;
+}
+
+.next-to-carousel-banners .banner-wrapper a {
+    display: flex;
+    align-items: center;
+    color: #757575;
+    height: 70px;
+    padding: 7px 35px 7px 13px;
+    border: 1px solid #dadada;
+    font-weight: 500;
+}
+
+.next-to-carousel-banners .banner-wrapper a:hover {
+    color: #1179C0;
+}
+
+.next-to-carousel-banners .banner-wrapper a:hover::after {
+    background-color: rgba(17, 121, 192, 0.06);
+}
+
+.next-to-carousel-banners .banner-wrapper a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    -webkit-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+}
+
+.next-to-carousel-banners .banner-wrapper a img {
+    max-height: 64px;
+    max-width: 64px;
+    margin-left: 9%;
+    text-align: center;
+    transform: none;
+    transition: none;
+    -webkit-transition: none;
+}
+
+.next-to-carousel-banners .banner-wrapper a .extended-banner-texts {
+    position: relative;
+    flex-grow: 0;
+    padding: 0px 0px 0px 10%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 38px;
+    width: 75%;
+}
+
+.next-to-carousel-banners .banner-wrapper a .extended-banner-texts .extended-banner-title {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    font-size: inherit;
+    padding: 0px;
+    box-shadow: none;
+    border: none;
+}
+
+h4.homepage-group-title,
+.h4.homepage-group-title {
+    margin-top: 15px;
+}
+
+/* Skrytí textu v banneru */
+.extended-banner-title {
+    display: none;
+}
+
+.extended-banner-link {
+    display: none;
+}
+
+.extended-banner-text {
+    display: none;
+}
+
+/* skrytí hodnocení na úvodní stránce */
+.content-wrapper.latest-contribution-box .latest-contribution-wrapper {
+    display: none;
+}
+
+@media (min-width:$mobile) {
+    .next-to-carousel-banners>.banner-wrapper {
+        width: 50%;
+    }
+}
+
+@media (min-width:$tablet) {
+    .next-to-carousel-banners {
+        margin: 15px 10px 19px;
+    }
+    .banners-row .banner-wrapper+.banner-wrapper {
+        margin-top: 0;
+    }
+    .next-to-carousel-banners>.banner-wrapper {
+        width: 33.33333333%;
+    }
+
+    /* Změna šíře v banneru na pozici "Střed" */
+    .content-wrapper.homepage-box.middle-banners-wrapper .col-sm-4 {
+        width: 50%;
+    }
+
+    .content-wrapper.homepage-box.middle-banners-wrapper .col-sm-8 {
+        width: 50%;
+    }
+}
+
+@media (max-width:$tablet-max) {
+
+    h4.homepage-group-title,
+    .h4.homepage-group-title {
+        margin-top: 15px;
+    }
+}
+/* Naše značky */
+[class*="custom-footer__banner"] {
+    align-items: center;
+    display: flex;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #dadada;
+    padding-bottom: 20px!important;
+    padding-top: 20px!important;
+}
+[class*="custom-footer__banner"]>.banner {
+    margin-bottom: 0px;
+}
+@media (max-width: 767px){
+    [class*="custom-footer__banner"] {
+        width: 50%!important;
+    }
+    .custom-footer .banner {
+    min-height: auto;
+    }
+    .custom-footer {
+        padding-top: 0px;
+    }
+}

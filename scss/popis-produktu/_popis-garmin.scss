@@ -1,0 +1,354 @@
+/* Text - Garmin specifikace */
+
+@media screen and (min-width: 768px) {
+    .g__heading h3 {
+        font-size: 2rem;
+    }
+}
+.g__heading--left {
+    text-align: left;
+}
+.app__feature__card__title {
+    text-transform: uppercase;
+    line-height: 1.5rem;
+}
+.app__feature__card__title h3 {
+    font-weight: 600;
+}
+.app__headline__container {
+    display: block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    --headlineMobileTextSizeAdjuster: 2.5;
+    --headlineSecondaryTextSizeAdjuster: 3;
+    --headlineRatio: calc(var(--headlineMobileTextSizeScaler) * var(--headlineMobileTextSizeAdjuster));
+    --headlineFontSize: calc(1.6vw * var(--headlineRatio));
+    font-size: var(--headlineFontSize);
+}
+@media screen and (min-width: 768px) {
+    .app__headline__container {
+        --headlineFontSize: calc(1.6vw * var(--headlineTextSizeScaler));
+        font-size: calc(var(--headlineFontSize));
+    }
+}
+.app__life-style .app__headline__container {
+    padding-left: 0;
+    padding-right: 0;
+    --headlineMobileTextSizeScaler: 1.4;
+    --headlineTextSizeScaler: 1.6;
+}
+@media screen and (min-width: 768px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+.app__headline {
+    color: #000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.app__headline--light, .app__headline--light a, .app__headline--neutral, .app__headline--neutral a {
+    color: #000;
+}
+@media screen and (min-width: 768px) {
+    .app__headline--right {
+        text-align: right;
+    }
+}
+.app__life-style__text__con {
+    color: #fff;
+    text-shadow: 0 0 .5em #000;
+    text-align: center;
+    font-family: Oswald;
+    padding: 2rem;
+    margin: 0;
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .app__life-style__text__con {
+        position: absolute;
+        width: 35%;
+        padding: 2rem 0 2rem 2rem;
+        text-align: left;
+    }
+}
+@media screen and (min-width: 768px) {
+    .app__life-style__text__con--top {
+        top: 0;
+    }
+}
+@media screen and (min-width: 768px) {
+    .app__life-style__text__con--right {
+        right: 0;
+        padding: 2rem 4rem 2rem 0;
+        text-align: right;
+    }
+}
+.app__life-style--light .app__life-style__text__con {
+    color: #000;
+    text-shadow: 0 0 .5em #fff;
+}
+.app__img-banner__img {
+    width: 100%;
+    display: block;
+}
+@media screen and (min-width: 768px) {
+    .app__img-banner__img--mobile {
+        display: none;
+    }
+}
+.app__img-banner__img {
+    width: 100%;
+    display: block;
+}
+.app__img-banner__img--desktop {
+    display: block;
+}
+.app__tabs__content__main img {
+    max-width: 100%;
+    height: auto;
+}
+.app__tabs__content__wrap img {
+    max-width: 100%;
+    height: auto;
+}
+.app__life-style__img-con {
+    background-color: #000;
+}
+.app__life-style {
+    position: relative;
+    display: block;
+    background-color: #000;
+}
+@media screen and (min-width: 768px) {
+    .app__life-style {
+        background-color: #0000;
+    }
+}
+.app__feature__card__description {
+    font-size: 1.475rem;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin: 0;
+}
+.app__feature__card__description--left {
+    text-align: left;
+}
+.app__overview__intro__icons .app__feature__card__description {
+    text-align: center;
+}
+.app__feature__card__image {
+    display: inline;
+    max-width: 280px;
+    margin: 0 0 .5rem;
+}
+.app__tabs__content__main img {
+    max-width: 100%;
+    height: auto;
+}
+.app__tabs__content__wrap img {
+    max-width: 100%;
+    height: auto;
+}
+.app__column-layout>* {
+    flex: 0 0 100%;
+}
+@media screen and (min-width: 480px) {
+    .app__column-layout__column__mobile--2>* {
+        flex-basis: calc(50% - .5rem);
+    }
+}
+@media screen and (min-width: 768px) {
+    .app__column-layout>* {
+        flex-basis: 100%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .app__column-layout__column--3>* {
+        flex-basis: calc(100% / 3 - 1rem / 3* 2);
+    }
+}
+@media screen and (min-width: 768px) {
+    .app__column-layout__column--6>* {
+        flex-basis: calc(100% / 6 - 1rem / 6* 5);
+    }
+}
+.app__feature__card {
+    text-align: center;
+}
+.app__column-layout {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+@media screen and (min-width: 768px) {
+    .app__column-layout {
+        gap: 0 1rem;
+    }
+}
+.app__overview__intro__icons {
+    gap: 3rem 1rem;
+}
+.g__heading h1 {
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    line-height: 1.25;
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+@media screen and (min-width: 768px) {
+    .g__heading h1 {
+        font-size: 3rem;
+    }
+}
+.g__heading--light h1, .g__heading--light h2, .g__heading--light h3, .g__heading--light h4, .g__heading--light h5, .g__heading--light h6 {
+    color: #000;
+}
+.g__heading--light {
+    color: #000000;
+    background: transparent;
+}
+.g__heading--center {
+    text-align: center;
+}
+.app__layout-container>* {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+.app__overview__intro__description {
+    margin-bottom: 3rem;
+    max-width: 900px;
+    text-align: center;
+}
+.app__layout-container {
+    width: 100%;
+    padding: 3rem 0rem;
+    background-color: #fff;
+    color: #000;
+}
+.g__copy {
+    display: block;
+    margin-bottom: 2rem;
+}
+.g__copy--light, .g__copy--gray {
+    color: #000000;
+    background: transparent;
+}
+.g__copy--center, .g__copy--center th {
+    text-align: center;
+}
+.g__copy--large, .g__copy--large table, .g__copy--intro, .g__copy--intro table {
+    font-size: 1.625rem!important;
+}
+.app__headline--dark, .app__headline--dark a {
+    color: #fff;
+}
+.app__headline--mobile--center {
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .app__headline--left {
+        text-align: left;
+    }
+}
+.app__life-style__text__con__mobile--top, .app__life-style__text__con__mobile--middle, .app__life-style__text__con__mobile--bottom {
+    position: absolute;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (min-width: 768px) {
+    .app__life-style__text__con__mobile--top, .app__life-style__text__con__mobile--middle, .app__life-style__text__con__mobile--bottom {
+        -webkit-font-smoothing: unset;
+        -moz-osx-font-smoothing: unset;
+    }
+}
+.app__life-style__text__con__mobile--top {
+    top: 0;
+}
+.app__life-style__text__con__mobile--center {
+    text-align: center;
+}
+.app__life-style__text__con__mobile--bottom {
+    bottom: 0;
+}
+@media screen and (min-width: 768px) {
+    .app__life-style__text__con--middle {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+@media screen and (min-width: 768px) {
+    .app__life-style__text__con--left {
+        padding: 2rem 0 2rem 2rem;
+        text-align: left;
+    }
+}
+.app__headline__secondary-text {
+    font-size: 33.333333%;
+    display: block;
+    margin: 0;
+    text-transform: uppercase;
+    color: inherit;
+}
+.app__headline__primary-text+.app__headline__secondary-text {
+    margin: 1.5rem 0 0;
+}
+@media screen and (min-width: 768px) {
+    .app__headline--right {
+        text-align: right;
+    }
+}
+/* Parametry - Garmin specifikace */
+#app__tabs__content__specs table {
+    width: 99%;
+}
+.app__tabs__content__wrap table tr.title td h3 {
+    font-weight: 400;
+    letter-spacing: .05rem;
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+}
+#app__tabs__content__specs table th {
+    text-align: left;
+    text-transform: uppercase;
+}
+#app__tabs__content__specs table th {
+    margin: auto 0;
+    background: #f2f2f2 !important;
+    font-weight: 600 !important;
+    vertical-align: middle;
+    padding: 8px 16px;
+    letter-spacing: -.2px;
+    word-break: break-word;
+    width: 50%;
+}
+#app__tabs__content__specs table td {
+    padding-left: 16px;
+    padding-right: 16px;
+    vertical-align: middle;
+    text-align: center;
+    word-break: break-word;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-width: 0px 0px 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
+    padding: 0px;
+}
+#app__tabs__content__specs table tr:first-child td, table tr:first-child th {
+    border-top: none;
+}
+#app__tabs__content__specs table td.yes:before {
+    content: "";
+    width: 100%;
+    height: 11px;
+    display: inline-block;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0OC43NSI+Cjxwb2x5Z29uIHBvaW50cz0iNDkuMjgsMCAyMSwyNy43OSAxMC41MiwxNy40OSAwLDI4LjAxIDIxLDQ4Ljc1IDYwLDEwLjI0ICIgc3R5bGU9ImZpbGw6IzAwMCIgLz4KPC9zdmc+) 0 4px no-repeat;
+    background-position: center;
+    margin-top: 5px;
+}

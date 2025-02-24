@@ -1,0 +1,95 @@
+/* Úprava drobečkové navigace na mobil */
+.breadcrumbs-wrapper {
+	overflow-x: auto;
+}
+
+.breadcrumbs {
+	display: flex;
+	margin-left: -20px;
+	margin-right: -20px;
+	border-style: solid;
+	border-width: 1px 0px;
+	color: #757575;
+	white-space: nowrap;
+}
+
+.breadcrumbs>span>a,
+.breadcrumbs>span>span {
+	font-weight: bold;
+
+}
+
+.breadcrumbs>span>a {
+	position: relative;
+	display: block;
+	min-height: 38px;
+	color: #757575;
+}
+
+@media (max-width:991px) {
+
+	.breadcrumbs>span>a,
+	.breadcrumbs>span>span {
+		padding: 10px 20px;
+	}
+
+	.breadcrumbs>span {
+		align-self: center;
+	}
+
+	.breadcrumbs>span>a::before,
+	.breadcrumbs>span>a::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		width: 1px;
+		height: 75%
+	}
+
+	.breadcrumbs>span>a::before {
+		top: -12.5%;
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg)
+	}
+
+	.breadcrumbs>span>a::after {
+		bottom: -12.5%;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg)
+	}
+
+	.type-product .breadcrumbs>span:nth-last-child(2)>a::before,
+	.type-product .breadcrumbs>span:nth-last-child(2)>a::after {
+		display: none;
+	}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	.type-product .breadcrumbs>span>span, .type-category .breadcrumbs>span>span {
+		display: none;
+	}
+}
+
+@media (max-width:767px) {
+
+	/**** Zobrazení drobečkové navigace ****/
+	.type-product .breadcrumbs>span, .type-category .breadcrumbs>span {
+		display: none;
+	}
+
+	.type-product .breadcrumbs>span:first-child,
+	.type-product .breadcrumbs>span:nth-last-child(2),
+	.type-product .breadcrumbs>span:nth-last-child(3) {
+		display: block;
+	}
+	.type-category .breadcrumbs>span:first-child,
+	.type-category .breadcrumbs>span:nth-last-child(1),
+	.type-category .breadcrumbs>span:nth-last-child(2)
+	 {
+		display: block;
+	}
+}

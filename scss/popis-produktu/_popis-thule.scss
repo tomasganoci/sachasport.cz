@@ -1,0 +1,122 @@
+/* Thule - popis */
+.basic-description .accordion {
+    border-bottom: .1rem solid #5e5e5e;
+    padding-bottom: 2.4rem;
+    padding-top: 2.4rem;
+}
+
+.basic-description .d-flex {
+    display: flex !important;
+}
+.basic-description .pdp__features .feature-wrapper .image-container.has-image {
+    border: 1px solid #e0e0e0;
+}
+@media screen and (min-width: 992px) {
+    .basic-description .pdp__features .feature-wrapper .feature-text-content {
+        max-width: 380px;
+    }
+}
+.basic-description .pdp__features .feature-wrapper .feature-text-content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.basic-description .pdp__features .feature-wrapper .feature-text-content .small-divider {
+    background-color: #bababa;
+    height: 4px;
+    width: 42px;
+}
+@media (min-width: 992px) {
+    .basic-description .m-lg-8, .basic-description .mb-lg-8, .basic-description .my-lg-8 {
+        margin-bottom: 3.2rem !important;
+    }
+}
+@media (min-width: 992px) {
+    .basic-description .m-lg-10, .basic-description .mt-lg-10, .basic-description .my-lg-10 {
+        margin-top: 4.8rem !important;
+    }
+}
+@media (min-width: 992px) {
+    .basic-description .heading4, h4 {
+        font-size: 2.4rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .basic-description .pdp__features .feature-wrapper .image-container {
+        min-width: 43.8rem;
+    }
+}
+@media (min-width: 992px) {
+    .basic-description .m-lg-8, .basic-description .me-lg-8, .basic-description .mx-lg-8 {
+        margin-right: 3.2rem !important;
+    }
+}
+@media (min-width: 0) {
+    .basic-description .m-5, .basic-description .mt-5, .basic-description .my-5 {
+        margin-top: 1.6rem !important;
+    }
+}
+@media (min-width: 0) {
+    .basic-description .m-4, .basic-description .mb-4, .basic-description .my-4 {
+        margin-bottom: 1.2rem !important;
+    }
+}
+@media (min-width: 0) {
+    .basic-description .p-9, .basic-description .pb-9, .basic-description .py-9 {
+        padding-bottom: 4rem !important;
+    }
+}
+@media screen and (min-width: 992px) {
+    .basic-description .pdp__techSpecs .techSpecs__ItemContainer {
+        column-count: 3;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+    }
+}
+.basic-description .pdp__techSpecs .techSpecs__ItemContainer {
+    margin-top: 1.2rem;
+}
+@media screen and (min-width: 992px) {
+    .basic-description .pdp__techSpecs .techSpecs__ItemContainer .techSpecs__Item {
+        break-inside: avoid-column;
+        flex-basis: 33.33%;
+        margin-bottom: 2.4rem;
+    }
+}
+
+.basic-description .pdp__techSpecs .techSpecs__ItemContainer .techSpecs__Item {
+    margin-bottom: 3.2rem;
+}
+@media screen and (min-width: 992px) {
+    .basic-description .pdp__techSpecs .spare-parts-btn {
+        width: 300px;
+    }
+}
+@media (min-width: 992px) {
+    .basic-description .m-lg-9, .basic-description .mt-lg-9, .basic-description .my-lg-9 {
+        margin-top: 4rem !important;
+    }
+}
+.basic-description .badge--Commercial, .basic-description .badge--Informative, .basic-description .heading6, .basic-description .heading7 {
+    font-size: 1.4rem;
+    color: #181818;
+}
+@media screen and (max-width: 991px) {
+    .basic-description .pdp__features .feature-wrapper {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 991px) {
+    .basic-description .pdp__features .feature-wrapper .image-container.has-image {
+        margin-bottom: 3.2rem;
+    }
+}
+.basic-description .heading4, h4 {
+    font-size: 2rem;
+}
+@media (min-width: 0) {
+    .basic-description .m-8, .basic-description .mt-8, .basic-description .my-8 {
+        margin-top: 3.2rem !important;
+    }
+}

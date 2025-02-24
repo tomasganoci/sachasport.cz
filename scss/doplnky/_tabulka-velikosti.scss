@@ -1,0 +1,163 @@
+/* <!-- Tabulka velikostí --> */
+/* <!-- service 518(170) html code header --> */
+/* https://cdn.fv-studio.cz/common/sizes/fv-studio-app-sizes.css?v=6 */
+/* Modal (pozadi) */
+#myModal {
+	display: none;
+	/* skryte v zakladu */
+	position: fixed;
+	/* Fixni pozice */
+	z-index: 9999;
+	padding: 40px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	/* Plna sirka */
+	height: 100%;
+	/* Full vyska */
+	background-color: rgb(0, 0, 0);
+	/* Barva pozadi */
+	background-color: rgba(0, 0, 0, 0.8);
+	/* Cerna s pruhlednosti */
+	overflow: hidden;
+}
+
+/* Modal Obsah */
+.modal-obsah {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 0.4px solid grey;
+	width: 77%;
+	border-radius: 1px;
+	overflow: auto;
+	/* Scrollovani povoleno */
+	height: 100%;
+	position: relative;
+}
+
+@media (max-width: 787px) {
+	.modal-obsah {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 5px;
+		border: 0.4px solid grey;
+		width: 100%;
+		border-radius: 1px;
+	}
+}
+
+#myBtnTabulka_velikosti {
+	width: 250px;
+	margin-top: 30px;
+	border-radius: 2px;
+	background: white;
+	color: black;
+	font-size: 15px;
+	box-shadow: 1px 2px 0.2rem 1px grey;
+	cursor: pointer;
+	margin-bottom: 20px;
+	padding: 3px;
+	text-align: center;
+	transition: 350ms;
+}
+
+#myBtnTabulka_velikosti:before {
+	content: '\2702';
+	font-family: shoptet;
+	padding-right: 5px;
+}
+
+#myBtnTabulka_velikosti:hover {
+	background: #f7f7f7;
+	color: black;
+	box-shadow: 1px 2px 0.5rem 1px black;
+}
+
+#myModal>div>article>header {
+	padding-top: 15px;
+}
+
+#myModal>div>article>header>h1 {
+	text-align: center;
+}
+
+body>div.container>#myBtnTabulka_velikosti {
+	display: none !important;
+}
+
+#footer #myBtnTabulka_velikosti {
+	display: none !important;
+}
+
+div.container>#myBtnTabulka_velikosti {
+	display: none !important;
+}
+
+#myModal .close-btn {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	color: #666;
+	cursor: pointer;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+#myModal .close-btn:hover {
+	color: #000;
+}
+
+
+@media (max-width: 992px) {
+	#myModal .close-btn {
+		top: 5px;
+		right: 5px;
+	}
+}
+
+/*@media (min-width: 788px) {
+    #myModal .close-btn {display:none;}
+}*/
+#myModal #showHeurekaBadgeHere-11 {
+	display: none;
+}
+
+body.shoptetak-nefrit #myBtnTabulka_velikosti {
+	position: initial;
+}
+
+#myModal .modal-obsah [itemtype="https://schema.org/NewsArticle"] time {
+	display: none;
+}
+/* Vlastní úpravy */
+/* Tabulka velikostí - Změna ikony u tabulky velikostí na produktové stránce */
+#myBtnTabulka_velikosti:before {
+	content: '\261B';
+}
+
+#myBtnTabulka_velikosti:after {
+	content: '\261A';
+	padding-left: 5px;
+}
+
+/* Mobilní úprava do 300px */
+@media (max-width:300px) {
+	#myBtnTabulka_velikosti:before {
+		content: none;
+	}
+
+	#myBtnTabulka_velikosti:after {
+		content: none;
+	}
+
+	#myBtnTabulka_velikosti {
+		width: unset;
+		display: inline-block;
+		padding: 3px 55px;
+	}
+}
+

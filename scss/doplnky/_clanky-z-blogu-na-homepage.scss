@@ -1,0 +1,215 @@
+/* Články z blogu na homepage */
+/* <!-- service 410(64) html code header --> */
+[class~=blog-hp]:before {
+    content: "Novinky z blogu";
+}
+
+[class~=blog-hp] [class~=news-item] {
+    margin-bottom: 25px;
+}
+
+.blog-hp,
+[class~=blog-hp] [class~=news-item] [class~=image] {
+    width: 100%;
+}
+
+.blog-hp {
+    margin-left: auto;
+}
+
+[class~=blog-hp]:before {
+    text-transform: uppercase;
+}
+
+.blog-hp,
+[class~=blog-hp] [class~=news-item] [class~=image] {
+    margin-bottom: 0;
+}
+
+[class~=blog-hp] [class~=news-item] [class~=text] [class~=title] {
+    margin-top: .3125pc;
+}
+
+[class~=blog-hp] [class~=news-item] {
+    padding-bottom: 0;
+}
+
+[class~=blog-hp]:before {
+    display: block;
+}
+
+.blog-hp {
+    margin-right: auto;
+}
+
+[class~=blog-hp]:before {
+    text-align: center;
+}
+
+.blog-hp {
+    margin-top: .3125in;
+}
+
+[class~=blog-hp]:before {
+    font-size: .291666667in;
+}
+
+.blog-hp .news-item {
+    padding-left: 11.25pt;
+}
+
+[class~=blog-hp] [class~=news-item]:nth-child(n+4) {
+    display: none;
+}
+
+.blog-hp .news-item {
+    padding-bottom: 0;
+}
+
+[class~=blog-hp] [class~=news-item] time {
+    margin-bottom: 7px;
+}
+
+.blog-hp .news-item {
+    padding-right: 11.25pt;
+}
+
+.blog-hp .news-item {
+    padding-top: 0;
+}
+
+[class~=blog-hp] [class~=news-item] [class~=text] [class~=title] {
+    margin-bottom: 5px;
+}
+
+[class~=blog-hp]:before {
+    font-weight: 300;
+}
+
+.blog-hp {
+    max-width: 12.270833333in;
+}
+
+[class~=blog-hp]:before {
+    margin-bottom: .15625in;
+}
+
+[class~=blog-hp] [class~=news-item] [class~=image] {
+    margin-left: 0;
+}
+
+[class~=blog-hp] [class~=news-item]:hover [class~=image] img {
+    opacity: .8;
+}
+
+[class~=blog-hp] [class~=news-item] [class~=image] {
+    margin-right: 0;
+}
+
+[class~=blog-hp] [class~=news-item] [class~=image] {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+    [class~=blog-hp] [class~=news-item] {
+        width: 33%;
+    }
+
+    [class~=blog-hp] [class~=news-item] {
+        display: inline-block;
+    }
+
+    [class~=blog-hp] [class~=news-item] {
+        vertical-align: top;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    [class~=blog-hp] [class~=news-item] {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .blog-hp {
+        max-width: 14.770833333in;
+    }
+}
+
+.blog-hp:empty {
+    display: none;
+}
+
+.blog-hp .news-item {
+    padding-bottom: 15px;
+}
+
+.blog-hp+.blog-hp {
+    display: none;
+}
+
+.blog-hp:lang(hu)::before {
+    content: "Újdonságok a blogon";
+}
+
+.en .blog-hp::before {
+    content: "Blog news";
+}
+
+.de .blog-hp::before {
+    content: "Neue Blogartikel";
+}
+
+/* Moje úpravy */
+/* Přejménování blogu */
+[class~=blog-hp]:before {
+    content: "Novinky";
+}
+
+@media (min-width: 480px) {
+
+    /*Zobrazení 4 článků */
+    .blog-hp .news-item {
+        width: 50%;
+    }
+
+    .blog-hp .news-item {
+        display: inline-block;
+    }
+
+    .blog-hp .news-item:nth-child(4) {
+        display: inline-block;
+    }
+
+    .blog-hp .news-item:nth-child(n+5) {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /*Zobrazení 4 článků */
+    .blog-hp .news-item {
+        width: 25%;
+    }
+
+    .blog-hp .news-item:nth-child(4) {
+        display: inline-block;
+    }
+
+    blog-hp .news-item:nth-child(n+5) {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /*Zobrazení 5 článků */
+    .blog-hp .news-item {
+        width: 20%;
+    }
+
+    .blog-hp .news-item:nth-child(n+4) {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,43 @@
+/* Košík */
+/* Skrytí věrnostní slevy v košíku */
+.extra.discount {
+	display: none;
+}
+
+/* Zvýraznění data doručení */
+#cart-wrapper .delivery-time strong {
+	color: #ff0000;
+	text-decoration: underline;
+}
+
+/* Doprava a platba */
+/* Změna zobrazení dopravy */
+#order-shipping-methods .payment-info b {
+	text-transform: none;
+}
+
+/* Skrytí možnosti platby */
+#order-billing-methods .inactive-child {
+	display: none;
+}
+/* zarovnání varianty v rekapitulaci */
+.cart-item .main-link-surcharges, .main-link-variant {
+    overflow: hidden;
+	font-style: italic;
+}
+
+@media (max-width:480px) {
+	.payment-info {
+		order: 2;
+	}
+
+	.payment-logo {
+		order: 1;
+		text-align: left;
+		flex-basis: 100%;
+	}
+
+	.payment-shipping-price {
+		order: 3;
+	}
+}

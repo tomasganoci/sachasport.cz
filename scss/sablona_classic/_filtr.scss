@@ -1,0 +1,28 @@
+@import 'sirky-displeje';
+/* Velikosti EU do více sloupců */
+.filter-section-parametric-id-56 fieldset div:not(.aktivni-filtr, .advanced-filters-wrapper) {
+	text-align: left;
+	float: left;
+	width: 50%;
+}
+
+@media (max-width:991px) {
+
+	/* uspořádání filtrů a zboží */
+	#content-wrapper .category-content-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#filters-wrapper {
+		order: -1;
+	}
+}
+
+@media (min-width:$tablet) {
+/* Změna osazení ve filtrech */
+	.filter-label {
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+}

@@ -1,0 +1,199 @@
+/* <!-- Hodnocení obchodu v detailu produktu --> */
+/* <!-- service 425(79) html code header --> */
+.hodnoceni:before {
+	content: "Jak o nás mluví zákazníci";
+}
+
+.hodnoceni.svk:before {
+	content: "Ako o nás hovoria zákazníci";
+}
+
+.hodnoceni.hun:before {
+	content: "Mit mondanak rólunk a felhasználók";
+}
+
+.hodnoceni.pl:before {
+	content: "Co mówią o nas klienci";
+}
+
+.hodnoceni.eng:before {
+	content: "Customer reviews";
+}
+
+.hodnoceni.de:before {
+	content: "Was unsere Kunden über uns denken";
+}
+
+.hodnoceni.ro:before {
+	content: "Ce spun clienții despre noi";
+}
+
+.hodnoceni {
+	margin: 20px auto;
+}
+
+body:not(.paxio-merkur):not(.venus):not(.jupiter) .hodnoceni .vote-wrap {
+	border: 0 !important;
+	width: 24.5%;
+	flex-basis: 25%;
+	padding: 10px 20px !important;
+	display: inline-block;
+	margin: 0;
+	vertical-align: top;
+}
+
+.multiple-columns-body #content .hodnoceni .vote-wrap {
+	width: 49%;
+	flex-basis: 50%;
+}
+
+.hodnoceni .votes-wrap {
+	display: block;
+	border: 1px solid #f7f7f7;
+	margin: 0;
+	width: 100%;
+	max-width: none;
+	padding: 10px 0;
+	background: #fff;
+}
+
+.hodnoceni .vote-wrap:nth-child(n+5) {
+	display: none !important;
+}
+
+.hodnoceni:before {
+	display: block;
+	font-size: 18px;
+	padding: 10px 20px;
+	background: #fcfcfc;
+}
+
+.sidebar .hodnoceni .vote-pic,
+.sidebar .hodnoceni .vote-initials {
+	display: block;
+}
+
+.sidebar .hodnoceni .vote-wrap,
+#column-l #column-l-in .hodnoceni .vote-wrap {
+	width: 100% !important;
+	display: block;
+}
+
+.hodnoceni>a {
+	display: block;
+	text-align: right;
+	padding-top: 6px;
+}
+
+.hodnoceni>a:after {
+	content: "››";
+	display: inline-block;
+	margin-left: 2px;
+}
+
+.sidebar .hodnoceni:before,
+#column-l #column-l-in .hodnoceni:before {
+	background: none !important;
+	padding-left: 0 !important;
+}
+
+.template-10 .hodnoceni {
+	max-width: 952px !important;
+}
+
+.page-detail .hodnoceni>a {
+	font-size: 14px;
+}
+
+.page-detail .hodnoceni {
+	margin-bottom: 30px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.hodnoceni .vote-rating {
+		display: block;
+	}
+
+	.hodnoceni .vote-time {
+		display: block;
+		margin-top: 3px;
+	}
+
+	.hodnoceni .vote-delimeter {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	body:not(.paxio-merkur):not(.venus):not(.jupiter) .hodnoceni .vote-wrap {
+		width: 49%;
+		flex-basis: 50%;
+	}
+
+	.multiple-columns-body #content .hodnoceni .vote-wrap {
+		width: 99%;
+		flex-basis: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	body:not(.paxio-merkur):not(.venus):not(.jupiter) .hodnoceni .vote-wrap {
+		width: 99%;
+		flex-basis: 100%;
+	}
+}
+
+.home #main-product .hodnoceni {
+	margin: 0 0 60px 0;
+}
+
+.hodnoceni .votes-wrap.admin-response {
+	display: none;
+}
+
+.hodnoceni .vote-pic {
+	width: 100px;
+}
+
+.hodnoceni .vote-delimeter {
+	display: none;
+}
+
+.hodnoceni .vote-rating {
+	display: block;
+}
+
+.hodnoceni .vote-time {
+	display: block;
+	margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+	.template-12 .hodnoceni {
+		max-width: 747px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.template-12 .hodnoceni {
+		max-width: 972px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.template-12 .hodnoceni {
+		max-width: 1418px;
+	}
+}
+
+.template-14 .hodnoceni .vote-initials {
+	margin: 0 auto;
+}
+/* Vlastní úpravy */
+@media (max-width:767px) {
+	.vote-name--nowrap {
+			white-space: normal;
+		}
+	}

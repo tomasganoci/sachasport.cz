@@ -1,0 +1,299 @@
+/* Popis - Specialized specifikace */
+.basic-description .head {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #000;
+    margin: 10px 0px;
+}
+
+.basic-description div.even {
+    background: #ccc;
+    color: #000;
+    margin: 0 0;
+    border-style: hidden;
+    border-width: 0;
+}
+
+.basic-description .line .l {
+    width: 120px;
+    padding: 10px;
+    float: left;
+    line-height: 1;
+}
+
+.basic-description .line .r {
+    padding: 10px;
+    line-height: 1;
+}
+
+.basic-description div.line {
+    color: #000;
+    margin: 0 0;
+    border-style: hidden;
+    border-width: 0;
+}
+
+/* Popis - New Specialized specifikace */
+.basic-description .Collapsible__Wrapper {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.basic-description .product-specification {
+    color: #252525;
+    font-weight: 700;
+}
+.basic-description .product-specification dl {
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px !important;
+    line-height: 24px !important;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+.basic-description .product-specification dl:first-child {
+    margin-top: 30px;
+}
+.basic-description .Collapsible__ExpandItem {
+    margin-bottom: 24px;
+    margin-top: 42px;
+}
+
+.basic-description .Collapsible__ExpandItem {
+    display: inline-flex;
+}
+
+.basic-description .Collapsible__ExpandItem>span {
+    color: #252525;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.basic-description .Collapsible__ExpandItem>:first-child {
+    flex: 1;
+}
+
+.basic-description .Collapsible__ExpandItem:focus {
+    box-shadow: none;
+}
+
+.basic-description .Collapsible__ExpandItem>* {
+    align-items: center;
+    display: inline-flex;
+}
+
+.basic-description .Collapsible__ExpandItem>:last-child {
+    display: inline-flex;
+    padding: 0.375rem;
+}
+
+.basic-description .Collapsible__ExpandItem>* {
+    align-items: center;
+    display: inline-flex;
+}
+
+.basic-description .Collapsible__ExpandItem svg {
+    transform: rotate(90deg);
+}
+
+.basic-description .Collapsible__ExpandItem.open svg {
+    transform: rotate(-90deg);
+}
+
+.basic-description .Collapsible__Wrapper .Icon {
+    transition: transform .3s ease-in-out;
+}
+
+.basic-description .Icon {
+    height: 1.5rem;
+    margin: auto;
+}
+
+.basic-description .headLine_High_lighter {
+    background: #252525;
+    display: block;
+    height: 4px;
+    width: 24px;
+}
+
+.basic-description .SBCProductSpecification .spec-section {
+    font-size: 20px;
+    margin-bottom: 72px;
+    margin-top: 40px;
+}
+
+.basic-description .SBCProductGeometry table {
+    margin-bottom: 72px;
+    margin-top: 40px;
+}
+.basic-description #geometry table {
+    width: 100%;
+}
+.basic-description .spec-section dl dt {
+    color: #252525;
+    width: 137px;
+}
+.basic-description .spec-section dl dd {
+    font-weight: normal;
+    margin-left: 0px;
+}
+.basic-description .SBCProductSpecification .right_align {
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px !important;
+    line-height: 24px !important;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.basic-description .spec-section .right_align dl dd,
+.spec-section .right_align dl dt {
+    color: #333;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+}
+
+.basic-description .spec-section dd:last-child {
+    border-bottom: none;
+}
+
+.basic-description .SBCProductSpecification .headLine_High_lighter {
+    background: #252525;
+    display: block;
+    height: 4px;
+    width: 24px;
+}
+
+.basic-description .spec-section dd dl {
+    margin-left: 40px;
+}
+
+.basic-description .Collapsible__ExpandItem>span {
+    color: #252525;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.basic-description .right_align>dl>dt,
+.basic-description .spec-section dl dt {
+    font-weight: 700;
+}
+
+.basic-description .table_wrapper thead tr, .basic-description #geometry thead tr {
+    border-bottom: 2px solid rgba(0, 0, 0, .125);
+}
+
+.basic-description .table_wrapper tbody tr, .basic-description #geometry tbody tr {
+    border-top: 1px solid rgba(0, 0, 0, .125);
+}
+
+/* Popis - Specialized Geometrie */
+.basic-description #moreinfo {
+    margin: 0px 0px;
+}
+
+.basic-description .head table {
+    width: 100%;
+}
+
+.basic-description .head table .even {
+    background: #ccc;
+}
+
+.basic-description .head table td,
+.head table th {
+    padding: 4px 5px;
+    text-align: left;
+}
+
+.basic-description .module_geometry table td,
+.module_geometry table th {
+    padding: 4px 10px;
+    text-align: left;
+}
+
+.basic-description .module_geometry table {
+    border-spacing: 0;
+    width: 100%;
+    color: #000;
+}
+
+.basic-description .module_geometry .even {
+    background: #ccc;
+}
+/** specialized.com **/
+.sc-78b3ddfd-18 h6 {
+    font-size: 30px;
+    color: rgb(37, 37, 37);
+    margin: 0px 0px 16px;
+    line-height: 116%;
+    overflow-wrap: break-word;
+}
+.basic-description #technical-specifications {
+    border-top: 1px solid rgb(221, 221, 221);
+}
+.sc-5b40c988-1 {
+    padding: 16px 0px;
+}
+.sc-5b40c988-1 h3 {
+    color: rgb(37, 37, 37);
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    text-align: inherit;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 500;
+    line-height: 135%;
+}
+.sc-723758e6-0 {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(149, 149, 149);
+}
+.sc-723758e6-0:first-child {
+    margin-top: 0px;
+}
+.sc-723758e6-1 {
+    margin-bottom: 32px;
+}
+.sc-78b3ddfd-20 {
+    color: rgb(37, 37, 37);
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    text-align: inherit;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 700;
+    line-height: 116%;
+    overflow-wrap: break-word;
+    font-size: 24px;
+}
+.sc-78b3ddfd-9 {
+    color: rgb(37, 37, 37);
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    text-align: inherit;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 500;
+    line-height: 135%;
+    font-size: 16px;
+}
+.sc-78b3ddfd-3 {
+    color: rgb(149, 149, 149);
+}
+/** Geometrie **/
+.basic-description #geometry table td{
+    padding: .25rem .5rem;
+    white-space: nowrap;
+}
+#geometry{
+    overflow-x: auto;
+}

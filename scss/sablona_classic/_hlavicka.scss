@@ -1,0 +1,106 @@
+/* Změna horní lišty */
+.top-navigation-bar a,
+.top-navigation-bar .dropdown button {
+	color: #000;
+}
+
+/* Zvětšení loga */
+#header .site-name a img {
+	max-height: 90px;
+}
+
+/* barva tlačítka "Věrnostní sleva" */
+.menu-item-external-93 {
+	border-color: #eb5f00 !important;
+}
+
+.menu-item-external-93 a {
+	background-color: #eb5f00 !important;
+}
+
+.menu-item-external-93 a:hover {
+	color: #000 !important;
+	background-color: #f56d00 !important;
+  }
+
+/* Úprava menu helperu */
+.menu-helper {
+	top: 100px;
+}
+
+@media (max-width:767px) {
+
+	/***** Změna navigace v mobilu *****/
+	.responsive-tools>a[data-target="navigation"]::before {
+		background-color: transparent;
+		border-radius: unset;
+		font-size: 28px;
+	}
+
+	.top-navigation-bar {
+		background-color: #036588;
+	}
+
+	.navigation-buttons a[data-target="cart"] {
+		color: #fff;
+	}
+
+	.responsive-tools>a[data-target="search"] {
+		color: #fff;
+	}
+
+	.responsive-tools>a[data-target="search"]::before {
+		font-size: 28px;
+	}
+
+	#header {
+		background-color: #036588;
+	}
+
+	body.user-action-visible.search-window-visible {
+		top: 69px;
+	}
+
+	.ordering-process .responsive-tools>a[data-target="navigation"]::before {
+		color: #036588;
+	}
+
+	#header .site-name a img {
+		max-height: 50px;
+	}
+
+	.menu-item-external-93 a {
+		color: #fff;
+	}
+
+	@media (max-width:767px) {}
+
+	/***** Úprava košíku *****/
+	.navigation-buttons .cart-count {
+		bottom: 73px;
+	}
+
+	.scrolled-down body:not(.ordering-process):not(.search-window-visible) #header .cart-count {
+		top: -109px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	/* úprava horního zobrazení */
+	.header-top {
+		padding-top: 5px;
+		height: 100px;
+	}
+
+	/* Vylepšení rozbalovací kategorie */
+	.navigation-in>ul>li.ext>ul>li>a {
+		padding: 5px 0px;
+	}
+
+	.navigation-in>ul>li.ext>ul>li>a img {
+		max-width: 90px;
+		max-height: 65px;
+	}
+
+}
