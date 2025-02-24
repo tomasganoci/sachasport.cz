@@ -1,0 +1,15 @@
+{
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "compressed",
+        "extensionName": ".css",
+        "savePath": "/public"
+      }
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": ["last 2 versions"],
+    "liveSassCompile.settings.excludeList": [
+      "**/node_modules/**",
+    ]
+  }
+  
