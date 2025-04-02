@@ -1,0 +1,229 @@
+/* Popis - Rascal */
+
+@font-face {
+  font-family: "icons";
+  src: url("https://cdn.myshoptet.com/usr/www.sachasport.cz/user/documents/upload/znacky/rascal/app.icons.woff2")
+    format("woff2");
+}
+
+#znacka-rascal {
+  .w-figure.text-center img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .w-photo-size-icon img,
+  .w-photo-size-original img {
+    height: auto !important;
+    max-width: 100%;
+    width: auto;
+  }
+  .w-photo img {
+    width: 100%;
+  }
+
+  .w-photo {
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  figure {
+    margin: 0 0 1rem;
+  }
+  .w-figure {
+    border-radius: 0;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+  @media (min-width: 768px) {
+    .wpj-col-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  .text-left {
+    text-align: left;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .align-self-center {
+    align-self: center;
+  }
+  .w-text {
+    overflow-wrap: break-word;
+  }
+  .usp-wrapper {
+    background-color: #f8f8f8;
+    border-radius: 2px;
+    margin-bottom: 75px;
+    padding: 70px 50px 45px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+  .h2-base {
+    font-family: expressway, sans-serif;
+    text-align: center;
+  }
+
+  .w-badges {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 24px 0;
+  }
+  .usp-wrapper .w-badges {
+    align-items: flex-start;
+  }
+  .usp-wrapper .w-badge {
+    flex-direction: column;
+    text-align: center;
+    width: 33.3333333333%;
+  }
+  .w-badge {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    padding: 10px;
+    position: relative;
+  }
+  .usp-wrapper .w-badge .fc {
+    position: relative;
+  }
+  .w-badge > .fc {
+    flex-shrink: 0;
+  }
+  .fc {
+    display: inline-block;
+    line-height: 0.8em;
+  }
+  .usp-wrapper .w-badge:first-child .fc:before {
+    font-size: 90px;
+    margin-bottom: 0;
+  }
+  .usp-wrapper .w-badge .fc:before {
+    font-size: 80px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 1em;
+    z-index: 1;
+  }
+  .w-badge .fc:before {
+    color: #000;
+  }
+  .w-badge .fc:before {
+    flex-shrink: 0;
+    font-size: 26px;
+    width: 1.5em;
+  }
+  .icons_bike:before {
+    content: "\f104";
+  }
+  .icons_trust:before {
+    content: "\f123";
+  }
+  .icons_support:before {
+    content: "\f120";
+  }
+  .usp-wrapper .w-badge:last-child .fc:after {
+    color: #6fdefc;
+    left: 60%;
+    top: calc(50% - 40px);
+  }
+  .usp-wrapper .w-badge:nth-child(2) .fc:after {
+    color: #c9c2ba;
+    left: 75%;
+    transform: rotate(90deg);
+  }
+  .fc:before {
+    display: inline-block;
+    font-family: icons;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    height: 1em;
+    width: 1em;
+  }
+  .fc:before {
+    vertical-align: middle;
+  }
+  .usp-wrapper .w-badge:first-child .fc:after {
+    color: #e15257;
+    left: -10px;
+  }
+  .usp-wrapper .w-badge .fc:after {
+    display: inline-block;
+    font: normal normal normal 14px / 1 icons;
+    font-size: inherit;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    content: "\f122";
+    font-size: 70px;
+    position: absolute;
+    top: calc(40% - 40px);
+  }
+  .usp-wrapper .w-badge h4 {
+    font-family: expressway, sans-serif;
+    font-weight: 600;
+    text-align: center;
+  }
+  .usp-wrapper .w-badge .w-text {
+    max-width: 430px;
+  }
+  .w-badge .w-text p:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 543px) {
+    .usp-wrapper {
+      margin: 0 -10px 40px;
+    }
+    .w-badge {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .usp-wrapper {
+      margin-bottom: 40px;
+      padding: 45px 30px 20px;
+    }
+    .wpj-row-reverse {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .wpj-row-reverse > div:last-child {
+      order: -1;
+    }
+    .usp-wrapper .w-badges {
+      padding-top: 0;
+    }
+    .row > div[style*="padding-left:"] {
+      padding-left: 10px !important;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .usp-wrapper .w-badges {
+      flex-wrap: wrap;
+    }
+    .usp-wrapper .w-badge:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    .usp-wrapper .w-badge {
+      width: 100%;
+    }
+    .w-badge {
+      flex: none;
+      width: 50%;
+    }
+  }
+}
