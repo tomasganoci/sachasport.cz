@@ -12,6 +12,11 @@
     margin-right: auto;
   }
 
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .w-photo-size-icon img,
   .w-photo-size-original img {
     height: auto !important;
@@ -46,6 +51,7 @@
   }
   h2 {
     font-size: 35px;
+    margin-top: 0px;
   }
   .align-self-center {
     align-self: center;
