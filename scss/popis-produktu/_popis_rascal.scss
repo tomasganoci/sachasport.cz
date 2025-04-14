@@ -25,6 +25,8 @@
   }
   .w-photo img {
     width: 100%;
+    object-fit: cover;
+    max-height: 400px;
   }
 
   .w-photo {
@@ -230,6 +232,102 @@
     .w-badge {
       flex: none;
       width: 50%;
+    }
+  }
+  // Ikony v krátkém popisu
+  .product-top-params .param .icons_weight {
+    font-size: 22px;
+  }
+  .product-top-params .param .fc {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  .fc {
+    display: inline-block;
+    line-height: 0.8em;
+  }
+  .icons_weight:before {
+    content: "\f126";
+  }
+  .fc:before {
+    display: inline-block;
+    font-family: icons;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    height: 1em;
+    width: 1em;
+  }
+  .fc:before {
+    vertical-align: middle;
+  }
+  .icons_wheel:before {
+    content: "\f127";
+  }
+  .icons_height-kid:before {
+    content: "\f113";
+  }
+  .product-top-params .param {
+    align-items: center;
+    display: flex;
+    padding: 14px 17px;
+    position: relative;
+  }
+  .product-top-params {
+    align-items: stretch;
+    background-color: #f8f8f8;
+    border-radius: 30px;
+    display: flex;
+    line-height: 2;
+    transition: all 0.3s;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .product-top .product-top-params {
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 543px) {
+    .product-top .product-top-params {
+      margin: 0 -20px 30px;
+      width: calc(100% + 40px);
+    }
+  }
+  @media screen and (max-width: 543px) {
+    .product-top-params {
+      border-radius: 0;
+      justify-content: center;
+      margin: 0 -10px;
+      padding: 0;
+      width: calc(100% + 20px);
+    }
+  }
+  @media screen and (max-width: 1259px) {
+    .product-top-params {
+      padding: 0 8px;
+    }
+  }
+  @media screen and (max-width: 419px),
+    screen and (min-width: 768px) and (max-width: 991px) {
+    .product-top .product-top-params .param {
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 1259px) {
+    .product-top-params .param {
+      font-size: 13px;
+      padding: 14px 10px;
+    }
+    .product-top-params .param .icons_weight {
+      font-size: 18px;
+    }
+    .product-top-params .param .fc {
+      font-size: 26px;
     }
   }
 }
