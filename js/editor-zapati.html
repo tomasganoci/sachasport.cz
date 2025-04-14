@@ -1,0 +1,190 @@
+<script src="https://cdn.myshoptet.com/usr/www.sachasport.cz/user/documents/sachasport.js?v=48" defer
+	type="text/javascript"></script>
+<!-- <script src="https://embed.outfindo.com/guide/embed-shoptet-new.js"></script> -->
+<!-- <script src="https://embed.outfindo.com/guide/embed.js"></script> -->
+<script>
+	// Šipky v obrázcích
+	var detailProductArrows = true;
+	var detailProductArrowsShowOnHover = false;
+	var detailProductArrowsRadius = false;
+	var detailProductArrowsStopPropagation = false;
+</script>
+<div id="myModal">
+	<div class="modal-obsah">
+		<div class="modal-content"></div><span class="close-btn">x</span>
+	</div>
+</div>
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+<script>
+	//PWA
+	//        if ('serviceWorker' in navigator) {
+	//   navigator.serviceWorker.register("/user/documents/serviceworker.js?v=32");
+
+	//}
+	// Check if service workers are supported by the browser
+	if ("serviceWorker" in navigator) {
+		window.addEventListener("load", function () {
+			navigator.serviceWorker
+				.register("/user/documents/serviceworker.js?v=35", { scope: "/user/documents/" })
+				.then(function (registration) {
+					// Registration was successful
+					console.log("ServiceWorker registration successful with scope: ", registration.scope);
+				})
+				.catch(function (err) {
+					// Registration failed
+					console.log("ServiceWorker registration failed: ", err);
+				});
+		});
+	}
+	//let deferredPrompt;
+
+	//window.addEventListener("beforeinstallprompt", (e) => {
+	// e.preventDefault();
+	// deferredPrompt = e;
+	// Zobrazte tlačítko pro instalaci nebo aktualizujte UI
+	//});
+
+	// Přidejte funkci pro zpracování kliknutí na tlačítko instalace
+	// function installApp() {
+	//  if (deferredPrompt) {
+	//    deferredPrompt.prompt();
+
+	//    deferredPrompt.userChoice.then((choiceResult) => {
+	//      if (choiceResult.outcome === "accepted") {
+	//        console.log("Uživatel přijal instalaci PWA");
+	//      } else {
+	//        console.log("Uživatel odmítl instalaci PWA");
+	//      }
+	//      deferredPrompt = null;
+	//    });
+	//  }
+	//}
+
+	// Vytvořte tlačítko pro instalaci a přidejte posluchač události
+	//const installButton = document.createElement("button");
+	//installButton.textContent = "Nainstalovat aplikaci";
+	//installButton.addEventListener("click", installApp);
+	//document.body.appendChild(installButton);
+</script>
+
+<!-- <script>
+														// Všeobecné
+			
+			var borderRadiusRectangle = false;
+			// Hlavička
+			
+			var headerBlackIsVisible = false;
+			
+			
+			var headerIsFixed = true;
+			
+			
+			var headerIsFixedInverse = true;
+			// Skryť tlačidlo v rozbaľovacom menu
+			
+			var hideSubcategoryMoreBtn = false;
+			// Patička
+			
+			var footerNoLogo = false;
+			
+			
+			var contactPage = true;
+			
+					
+					var contactPageLink = "kontakt";
+			
+			
+			var footerThemeBlack = false;
+			
+					
+					var footerLogoBlack = "url odkaz";
+			// Uvodná stránka - carousel
+			
+			var carouselFullWidth = false;
+			
+			
+			var carouselTextAlign = "left";
+			
+			
+			var carouselOverlay = false;
+			
+			
+			var carouselArrowsOnMobile = true;
+			
+			
+			var carouselClassicLayout = true;
+			// Uvodná stránka - produkty
+			
+			var productsSlider = true;
+			
+			
+			var productsSliderOnMobile = false;
+			
+			
+			var productsColumnsAndRowsOnMobile = false;
+			// Uvodná stránka - uvítací text
+					
+					var homepageWelcomeTitle = "Kdo jsme?";
+			// Uvodná stránka - blog
+			
+			var homepageBlog = false;
+			
+					
+					var homepageBlogTitle = "Novinky...";
+			
+					
+					var blogPageLink = "blog";
+			// Uvodná stránka - hodnotenie obchodu
+			
+			var homepageRatings = true;
+			// Kategória - popisný text
+			
+			var categoryDescriptionTop = true;
+			// Kategória - banner hodnotenie obchodu
+			
+			var categorySidePanelRating = true;
+			// Detail - nadpisy pre súvisiace a podobné produkty
+			
+			var productDetailDefaultText = false;
+			
+					
+					var detailDefaultRelatedTitle = "Ďalšie...";
+			
+					
+					var detailDefaultAlternativeTitle = "Horúce...";
+			// Detail - parameter
+			
+			var detailParameterNewTab = true;
+			
+					
+					var detailParameterText = "Parametry";
+			// Detail - produkty
+			
+			var productsDetailSliderOnMobile = false;
+			
+			
+			var productsDetailColumnsAndRowsOnMobile = false;
+			// Detail - informácia o dostupnosti
+			
+			var detailAvailabilityTooltipReposition = true;
+			// Detail - možnosti doručenia text
+					
+					var shippingOptionMinimumPrice = "Doručení už od 65 Kč";
+			// Modul - Instagram
+			
+			var showInstagramOnlyOnMainPage = false;
+			// Modul - Časte otázky
+			
+			var showFAQOnlyOnMainPage = false;
+			// Modul - Značky
+			
+			var showPartnersOnlyOnMainPage = false;
+			</script> -->
+
+<script>
+	// Základne dizajnové prvky
+	var turskyDPTPosition = 2;
+	var turskyDPT = false;
+	var turskyDPTCategoryItem = false;
+	var turskyDPTAccordionMobile = false;
+</script>
