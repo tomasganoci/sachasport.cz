@@ -155,16 +155,11 @@
   margin: 0px 2px;
 }
 /* Skrytí kategorii v dětských parametrických kategorii */
-.in-detska-kola-2-roky .subcategories,
-.in-detska-kola-3-roky .subcategories,
-.in-detska-kola-4-roky .subcategories,
-.in-detska-kola-5-let .subcategories,
-.in-detska-kola-6-let .subcategories,
-.in-detska-kola-7-let .subcategories,
-.in-detska-kola-8-let .subcategories,
-.in-detska-kola-9-let .subcategories,
-.in-detska-kola-10-let .subcategories,
-.in-detska-kola-11-let .subcategories,
-.in-detska-kola-12-let .subcategories {
-  display: none;
+$kategorie: "2-roky", "3-roky", "4-roky", "5-let", "6-let", "7-let", "8-let",
+  "9-let", "10-let", "11-let", "12-let", "s-remenem", "s-retezem";
+
+@each $kategorieItem in $kategorie {
+  .in-detska-kola-#{$kategorieItem} .subcategories {
+    display: none;
+  }
 }
