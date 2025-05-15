@@ -1,48 +1,49 @@
 /* Zvýraznění data doručení */
 #variants .delivery-time span:last-child {
-	text-decoration: underline;
-	color: #ff0000;
+  text-decoration: underline;
+  color: #ff0000;
 }
-/* Přesunutí souvisejících produktů */
+/* Úprava souvisejících produktů */
 #content .p-detail {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-
-#content .p-detail .products-related-header {
-	order: 30;
+.products-block.products-related > div {
+  width: 50%;
 }
-
-#content .p-detail .products-related.products-additional {
-	order: 31;
+@media (min-width: 992px) {
+  .products-block.products-alternative > div,
+  .products-block.products-related > div {
+    width: 20%;
+  }
 }
 /* Tlačítko souvisejicích produktů */
 #content .p-detail .browse-p {
-	order: 32;
-	z-index: 2;
+  order: 32;
+  z-index: 2;
 }
 /* Změna cen variant */
-.variant-price-wrap>.price-final {
-	font-weight: 400;
-	font-size: 18px;
-	color: #ff0000;
+.variant-price-wrap > .price-final {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ff0000;
 }
 
-.standard-price-wrap>.price-standard {
-	font-size: 18px;
-	white-space: nowrap;
-	color: #000;
+.standard-price-wrap > .price-standard {
+  font-size: 18px;
+  white-space: nowrap;
+  color: #000;
 }
 /* Úprava "delivery-time" */
 .delivery-time {
-	display: block;
+  display: block;
 }
 .social-buttons-wrapper a.link-icon {
-	color: #757575;
+  color: #757575;
 }
 /* Mobilní úprava do 200px */
-@media (max-width:300px) {
-	.responsive-nav {
-		min-width: unset;
-	}
+@media (max-width: 300px) {
+  .responsive-nav {
+    min-width: unset;
+  }
 }
