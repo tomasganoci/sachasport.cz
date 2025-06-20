@@ -1,3 +1,7 @@
+// Skrytí EAN na produktech
+.productEan {
+  display: none;
+}
 /* Zvýraznění data doručení */
 #variants .delivery-time span:last-child {
   text-decoration: underline;
@@ -19,7 +23,6 @@
 }
 /* Tlačítko souvisejicích produktů */
 #content .p-detail .browse-p {
-  order: 32;
   z-index: 2;
 }
 /* Změna cen variant */
