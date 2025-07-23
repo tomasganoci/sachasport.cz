@@ -1,3 +1,28 @@
+/* Color Story v kategoriich */
+.color-story img {
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .color-story img {
+    width: 33.33%;
+  }
+}
+@media (min-width: 992px) {
+  .color-story img {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .color-story img {
+    width: 20%;
+  }
+}
+@media (min-width: 1440px) {
+  .color-story img {
+    width: 20%;
+  }
+}
+
 /* zobrazení popisu kategorie na jednom řádku, aby nezasahovali kategorie do popisu*/
 .category-perex,
 .category__secondDescription {
